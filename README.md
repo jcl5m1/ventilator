@@ -3,6 +3,31 @@ In the event that COVID-19 hospitalizations exhaust the availability of FDA appr
 
 Whenever possible, please seek professional medical care with proper equipment setup by trained individuals. Do not use random information you found on the internet.  
 
+# References about the supply and potential shortage of ventilators:
+
+Here we will briefly summarize information on the supply and potential shortage.  Key numbers that will affect this:
+
+1. The current numbers for supply of ventilators (# of ventilators currently)
+2. The demand for ventilators, over time (# of ventilators needed over time)
+3. The ability to increase supply of ventilators (# of ventilators able to be manufactured over time)
+
+Additionally, the numbers above will vary based on each region's need globally.
+
+Some preliminary data (we can continue to update) on some of these areas:
+
+| Region          | # ventilators, current supply | # ventilators, needed  |
+| -------------   |:-----------------------------:| --------------------: |
+| Globe           |                               |                       |
+| U.S.            | 46,000 [1]                    |   200,000 or more [1] |
+| California      | 7,587 and "buying more" now [2]   |                       |
+| ... add more... | ...         | ... |
+
+References
+
+- [1] Text from my friend who is a doctor at Stanford, let's replace with citable sources if possible. "Estimated 46,000 vent beds across US with anticipated need of 200,000, maybe more if more severe than we know"
+- [2] Gavin Newsom press conference, March 15, 2020 (add link)
+
+
 # References about CPAP/BiPAP/PEEP ventilator modes
 [Lung Mechanics: PEEP,PEP,ACMV](https://www.youtube.com/watch?v=ScoSEeZJE08)
 
