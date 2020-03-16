@@ -20,7 +20,7 @@ Whenever possible, please seek professional medical care with proper equipment s
 # Building
 This is what the extrated blower looks like with the ESC and Arduino attached (technically a Teensy2.0++).
 
-![Extracted CPAP Blower](https://lh3.googleusercontent.com/hPX3GiEjg27p6zlAJaIuewPsdLUfEzfqP5ohYC8VrtviFaYc5ei6jfTAS4LIBDdcHIdhpuq_E_aBKdyIbA0rODisRbDJCsFfAkan4rW36lzpe-3EGOYdA0jlX49WbZHJcepkXvDF1P0NWBhbsMosDWOsoL--PNAMOa0Y7Pk5AOKd6payBJhetiSbAD9iaavFTFQ5_ocNvrmUvQWIh7D92lYEzs09eLpB6oVJHv72387tul4qr0XIMQGp-V1sKZyPnIUXcOpnQj_iSyf39G_IHyFqIEp7XW8RS-CmWnMwjrGZbokv5Tm6w1S-3qRA0ivpDzjrzTzSzmyzhJ-L9B8HyR7URa23Q4meFWTSxA2hmK6O6EXueTxm1Q7RPoEQTbSH99uxQOb9FyVSBnoQABrHeudZbMujljwKpZpmsGyaIoxmAizKf-WFFApqdgIrUoMPhP6W00xGlSxr4rzU2taDTbNcBUuWDMOIUhMpQsnCqzDIboH4UKPNTyqL7qyJssZLCE_nFJ4u3074DjW5RNW1HRNGahOXi7TjbP9tHHyY2TCor28YiaPTaT777wy8swnhyHBhXFfz-bpylixZSGWibXfg-sT9b0Ytqj14yTBwZUx0zusSp7644Dgo2-wZyADEsb-xVDc8H0_f1qCgVn4XAA-p_VsYbTm-YZrOQ-ceHtljD4Y2A6WvNlFMAzSp_g=w817-h1089-no)
+![Extracted CPAP Blower](https://github.com/jcl5m1/ventilator/blob/master/images/IMG_20200315_230153.jpg?raw=true)
 
 # Testing
 
