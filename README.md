@@ -45,14 +45,24 @@ References
 
 5. 12v DC power supply that can handle at least 5A.  The blower works pretty had, and the breathing cycles can create voltage drops which will reset the Arduino if the supply if not strong enough.
 
-6. Tubing and face mask.  If you search for [CPAP face mask](https://www.google.com/search?q=cpap+mask), you'll find many options/suppliers.  I recommend a full face mask that covers both the mouth and nose.
+6. Tubing and face mask.  If you search for [CPAP face mask](https://www.google.com/search?q=cpap+mask), you'll find many options/suppliers.  I recommend a full face mask that covers both the mouth and nose.  As an alternative, see below for draft 3D printable parts.
+
 
 # Building
-This is what the extracted blower looks like with the ESC and Arduino attached (technically a Teensy2.0++).  It has a 3d printed tapered hose adpater on it.
+This is the full system, with mask, tubing, pump, 12v battery, and swtich for input.
+![Full System]()
+
+This is a close up of the extracted blower.  It simply an BLDC motor driving a blower fan.  A small ESC and Arduino attached (technically a Teensy2.0++).  It has a 3d printed tapered hose adpater on it to fit in the hose.
 
 ![Extracted CPAP Blower](https://github.com/jcl5m1/ventilator/blob/master/images/IMG_20200315_230153.jpg?raw=true)
 
-# Testing
+Since I have CPAP, I happen to have a [Resmed AitFit F20](https://www.amazon.com/Resmed-AirFit-Frame-System-Cushion/dp/B07C9MR5RS) mask mask that I can use.  This is quite comfortable, and covers both the nose and mouth to make agood seal.  However, below is a prototype mouthguard (with some tape), could provide a not great but usable solution.  [Here's the 3D model](https://github.com/jcl5m1/ventilator/blob/master/3dmodels/mouthgaurd_v20200316.1.stl).
+
+![Mouth Guard](https://github.com/jcl5m1/ventilator/blob/master/images/mouthguard.jpg?raw=true)
+![Mouth Guard model](https://github.com/jcl5m1/ventilator/blob/master/images/mouth_guard_model.JPG?raw=true)
+
+
+# Pressure Testing
 
 This is a picture of my test rig to measure the output pressure.  It's a U-shaped tube with attached measuring tape to check displacement of water.  The actual liquid displacement is 2x the measured line since liquid is being push downwards on the other side of the U an equal amount, doubling the displacement. (I think this is the correct way to measure).  At full blast at 12v, it is achieving 45cm/H20.  Guidance on ventilators for COVID-19 patients require upto 20cm/H20.  So, these blowers are plently powerful.
 
