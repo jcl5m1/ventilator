@@ -3,11 +3,12 @@ In the event that COVID-19 hospitalizations exhaust the availability of FDA appr
 
 Whenever possible, please seek professional medical care with proper equipment setup by trained individuals. Do not use random information you found on the internet.  
 
-# ToDos - things that I could use help with:
-1. Pulmonologist that (while understanding this is not an FDA approved device) is willing to advise on how to make this more effective as a last resort.
-2. Testing with a simple inflator pump and achieve the same pressure control
+# To Do's (aka. things that I could use help with):
+1. A pulmonologist that (while understanding this is not an FDA approved device) is willing to advise on how to make this more effective as a last resort.
+2. Testing with a simple inflator pump and achieve the same pressure control.
 3. Can we detect the breath cycle by simply watching the motor current? Adding ait pressure sensors may complicate the build meaningfully.  But, using a sense Resistor is simple enough to try.
 4. Developing a better solution to the mouth gaurd.  Current solution would require a bunch of tape to create a sufficent forward pressure.
+5. If there is desire to make these, I don't have a supply chain setup. The few parts I have on hand may not be easily sourcable in any volume quickly.
 
 # References about the supply and potential shortage of ventilators:
 
@@ -56,6 +57,7 @@ References
 
 # Building
 This is the full system, with mask, tubing, pump, 12v battery, and swtich for input.  However would recommend running with a DC powersupply since the battery will only last about 3-4 hours.  Wearing the mask with a dead battery could cause excessing CO2 build up.  This particular battery can charge and supply power at the same time, acting as an inline battery backup to AC power.
+
 ![Full System](https://github.com/jcl5m1/ventilator/blob/master/images/full%20system.jpg?raw=true)
 
 This is a close up of the extracted blower.  It simply an BLDC motor driving a blower fan.  A small ESC and Arduino attached (technically a Teensy2.0++).  It has a 3d printed tapered hose adpater on it to fit in the hose.
