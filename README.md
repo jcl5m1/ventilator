@@ -1,7 +1,8 @@
 # Arduino-Based Ventilator
 In the event that COVID-19 hospitalizations exhaust the availability of FDA approved ventilators.  This project documents the process of converting a low-cost CPAP (Continuous Positive Airway Pressure) blower into a rudimentary Ventilator that could help with breathing during an acute respitory attack.  
 
-Whenever possible, please seek professional medical care with proper equipment setup by trained individuals. Do not use random information you found on the internet.  
+<strong>Whenever possible, please seek professional medical care with proper equipment setup by trained individuals. Do not use random information you found on the internet.  </strong>
+
 
 # To Do's (aka. things that I could use help with):
 1. A pulmonologist that (while understanding this is not an FDA approved device) is willing to advise on how to make this more effective as a last resort.
@@ -9,6 +10,10 @@ Whenever possible, please seek professional medical care with proper equipment s
 3. Can we detect the breath cycle by simply watching the motor current? Adding ait pressure sensors may complicate the build meaningfully.  But, using a sense Resistor is simple enough to try.
 4. Developing a better solution to the mouth gaurd.  Current solution would require a bunch of tape to create a sufficent forward pressure.
 5. If there is desire to make these, I don't have a supply chain setup. The few parts I have on hand may not be easily sourcable in any volume quickly.
+6. Solutions to prevent the system from becoming unsafe if power is lost, is not obvious to me.  Ideas welcome.
+
+To provide comments/feedback, create a new issue on the project.  Thanks!
+
 
 # References about the supply and potential shortage of ventilators:
 
@@ -54,9 +59,10 @@ References
 
 6. Tubing and face mask.  If you search for [CPAP face mask](https://www.google.com/search?q=cpap+mask), you'll find many options/suppliers.  I recommend a full face mask that covers both the mouth and nose.  As an alternative, see below for draft 3D printable parts.
 
+7. Optional [inline 12v battery backup](https://www.amazon.com/gp/product/B07H8F5HYJ/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1).
 
 # Building
-This is the full system, with mask, tubing, pump, 12v battery, and swtich for input.  However would recommend running with a DC powersupply since the battery will only last about 3-4 hours.  Wearing the mask with a dead battery could cause excessing CO2 build up.  This particular battery can charge and supply power at the same time, acting as an inline battery backup to AC power.
+This is the full system, with mask, tubing, pump, 12v battery, and swtich for input.  However, I would strongly recommend running with a DC power supply since the battery will only last about 3-4 hours.  Wearing the mask with a dead battery could cause excessing CO2 build up.  This [particular battery](https://www.amazon.com/gp/product/B07H8F5HYJ/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) can charge and supply power at the same time, acting as an inline battery backup to wall power.
 
 ![Full System](https://github.com/jcl5m1/ventilator/blob/master/images/full%20system.jpg?raw=true)
 
@@ -64,7 +70,7 @@ This is a close up of the extracted blower.  It simply an BLDC motor driving a b
 
 ![Extracted CPAP Blower](https://github.com/jcl5m1/ventilator/blob/master/images/IMG_20200315_230153.jpg?raw=true)
 
-Since I have CPAP, I happen to have a [Resmed AitFit F20](https://www.amazon.com/Resmed-AirFit-Frame-System-Cushion/dp/B07C9MR5RS) mask mask that I can use.  This is quite comfortable, and covers both the nose and mouth to make a good seal.  However, below is a prototype mouthguard (with some tape), could provide a not great but usable solution.  [Here's the 3D model](https://github.com/jcl5m1/ventilator/blob/master/3dmodels/mouthgaurd_v20200316.1.stl). This would require tape to create enough positive pressure.  A little bit of leakage is actually desirable to allow CO2 to escape.
+Since I have CPAP, I happen to have a [Resmed AitFit F20](https://www.amazon.com/Resmed-AirFit-Frame-System-Cushion/dp/B07C9MR5RS) mask mask that I can use.  This is quite comfortable, and covers both the nose and mouth to make a good seal.  However, below is a prototype mouthguard (with some tape), could provide a not great but usable solution.  [Here's the 3D model](https://github.com/jcl5m1/ventilator/blob/master/3dmodels/mouthgaurd_v20200316.1.stl). This would require tape to create enough positive pressure.  A little bit of leakage is actually desirable to allow CO2 to escape near the mouth nose and flushes out the air over time, rather than being stuck in the tube.  <strong>Warning: wearing this taped down without power may cause dangerous CO2 build up.</strong>
 
 ![Mouth Guard](https://github.com/jcl5m1/ventilator/blob/master/images/mouthguard.jpg?raw=true)
 ![Mouth Guard model](https://github.com/jcl5m1/ventilator/blob/master/images/mouth_guard_model.JPG?raw=true)
