@@ -35,12 +35,10 @@ This is a picture of my test rig to measure the output pressure.  It's a U shape
 
 Here are some images showing the dislacement of the liquid.  I happen to have Diet Dr. Pepper on hand which is easier to see the level than just water.
 
-![Zero Level](https://github.com/jcl5m1/ventilator/blob/master/images/zero_level.jpg?raw=true){:height="200px"}
+![3cm](https://github.com/jcl5m1/ventilator/blob/master/images/3cm.jpg?raw=true)
 
-![3cm](https://github.com/jcl5m1/ventilator/blob/master/images/3cm.jpg?raw=true =250x)
+![11cm](https://github.com/jcl5m1/ventilator/blob/master/images/11cm.jpg?raw=true)
 
-![11cm](https://github.com/jcl5m1/ventilator/blob/master/images/11cm.jpg?raw=true =250x)
-
-![22.5cm](https://github.com/jcl5m1/ventilator/blob/master/images/22.5.jpg?raw=true =250x)
+![22.5cm](https://github.com/jcl5m1/ventilator/blob/master/images/22.5.jpg?raw=true)
 
 Here's a [video of the blower pushing a breathing cycle of 16 cycles/min oscilating between 12 and 22cm/H20](https://photos.app.goo.gl/b3yMPE5QpdeduxKS6).
