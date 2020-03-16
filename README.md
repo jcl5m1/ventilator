@@ -1,5 +1,5 @@
 # Arduino-Based Ventilator
-In the event that COVID-19 hospitalizations Exhaust the availability of FDA approved ventilators.  This project documents the process of converting a low-cost CPAP (Continuous Positive Airway Pressure) blower into a rudimentary Ventilator that could help with breathing during an acute respitory attack.  
+In the event that COVID-19 hospitalizations exhaust the availability of FDA approved ventilators.  This project documents the process of converting a low-cost CPAP (Continuous Positive Airway Pressure) blower into a rudimentary Ventilator that could help with breathing during an acute respitory attack.  
 
 Whenever possible, please seek professional medical care with proper equipment setup by trained individuals. Do not use random information you found on the internet.  
 
