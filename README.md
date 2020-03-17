@@ -69,7 +69,7 @@ This is the full system, with mask, tubing, pump, 12v battery, and swtich for in
 
 ![Full System](https://github.com/jcl5m1/ventilator/blob/master/images/full%20system.jpg?raw=true)
 
-Below is a close up of the extracted blower.  It simply an BLDC motor driving a blower fan.  A small ESC and Arduino attached (technically a Teensy2.0++).  It has a 3d printed tapered hose adpater on it to fit in the hose.  The [microcontroller software](https://github.com/jcl5m1/ventilator/tree/master/ventilator_control) can be programmed with the [Arduino IDE](https://www.arduino.cc/en/main/software). The software goes through a short initialization sequence to configure the ESC, and then starts at the lowest CPAP setting.  You can use the switch to cycle through pressure levels, and double click to cycle through operating modes.
+Below is a close up of the extracted blower.  It simply an BLDC motor driving a blower fan.  A small ESC and Arduino attached (technically a Teensy2.0++, but the code has now been changed to Arduino Nano).  It has a 3d printed tapered hose adpater on it to fit in the hose.  The [microcontroller software](https://github.com/jcl5m1/ventilator/tree/master/ventilator_control) can be programmed with the [Arduino IDE](https://www.arduino.cc/en/main/software). The software goes through a short initialization sequence to configure the ESC, and then starts at the lowest CPAP setting.  You can use the switch to cycle through pressure levels, and double click to cycle through operating modes.
 
 ![Extracted CPAP Blower](https://github.com/jcl5m1/ventilator/blob/master/images/IMG_20200315_230153.jpg?raw=true)
 
