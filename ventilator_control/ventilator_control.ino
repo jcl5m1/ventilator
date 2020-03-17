@@ -1,4 +1,4 @@
-// originally written by Johnny Lee <jcl5m1@gmail.com>
+// originally written by Johnny Lee <jcl5m1+ventilator@gmail.com>
 
 #include <Servo.h>
 
