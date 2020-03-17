@@ -10,10 +10,10 @@ In the event that COVID-19 hospitalizations exhaust the availability of FDA appr
 # To Do's (aka. things that I could use help with):
 1. A pulmonologist that (while understanding this is not an FDA approved device) is willing to advise on how to make this more effective as a last resort.
 2. Testing with a simple inflator pump and achieve the same pressure control.
-3. Can we detect the breath cycle by simply watching the motor current? Adding ait pressure sensors may complicate the build meaningfully.  But, using a sense Resistor is simple enough to try.
+3. Can we detect the breath cycle by simply watching the motor current? Adding air pressure sensors may complicate the build meaningfully.  But, using a simple current sensing resistor is simple enough to try.
 4. Developing a better solution to the mouth gaurd.  Current solution would require a bunch of tape to create a sufficent forward pressure.
 5. If there is desire to make these, I don't have a supply chain setup. The few parts I have on hand may not be easily sourcable in any volume quickly.
-6. Solutions to prevent the system from becoming unsafe if power is lost, is not obvious to me.  Ideas welcome.
+6. Solutions to prevent the system from becoming unsafe if power is lost.  It's not obvious to me on how to do this.  Ideas welcome.
 
 To provide comments/feedback, create a new issue on the project.  Thanks!
 
