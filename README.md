@@ -110,4 +110,6 @@ This is an adapter plate for a [NATO 40mm gas mask filter cartridge](https://www
 
 ![NATO Apart](https://github.com/jcl5m1/ventilator/blob/master/images/NATO_apart.jpg?raw=true) ![NATO attached](https://github.com/jcl5m1/ventilator/blob/master/images/NATO_attached.jpg?raw=true)
 
+This is an option for an [inline filter](https://www.directhomemedical.com/cart/merchant.mvc?Screen=PROD&Product_Code=1-H1605-inline-bacterial-viral-cpap-filters&Store_Code=DHM&gclid=EAIaIQobChMIo-G35omi6AIVSrzACh29hwv3EAQYASABEgK9FPD_BwE) that looks easy to install, and would be helpful for non-CPAP blowers. Thanks, [aris-t](https://github.com/aris-t)
+
 Thanks [axjjenn](https://github.com/axjjienn) for mentioning this.
