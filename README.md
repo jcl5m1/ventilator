@@ -93,7 +93,7 @@ Here's a [video of the blower pushing a breathing cycle of 16 cycles/min oscilat
 
 # Air Filtration 
 
-An open air blower into someone's airway work, but isn't great.  Some filtration is preferred.  These parts were originally used for a DIY [Powered Air Purifying Respriator (PAPR)](https://en.wikipedia.org/wiki/Powered_air-purifying_respirator). However, these will definitely affect the output pressure.  Given the headroom of the blower, it can probably handle the filter and still hit the target pressure.  These adapter plates can be attached with liberal amounts of hot glue, and wrapping the unit in vinyl tape.
+An open air blower into someone's airway isn't great.  If possible, some filtration is preferred.  These parts were originally used for a DIY [Powered Air Purifying Respriator (PAPR)](https://en.wikipedia.org/wiki/Powered_air-purifying_respirator). However, adding a filter will definitely affect the output pressure.  So, it will depend on the blowe ryou have.  Given the headroom of the blower I've tested, it can probably handle the filter and still hit the target pressure.  I haven't done long term thermal testing on at high pressure and a strong filter. These adapter plates can be attached with liberal amounts of hot glue, and wrapping the unit in vinyl tape.
 
 This is an adapter plate for a [3M P100 or N95 face mask filter cartridge](https://www.amazon.com/3M-50051138464658-Cartridge-Filter-Organic/dp/B07571LR2K/ref=sr_1_2?crid=36AKE548EW15U&keywords=3m+p100+cartridge&qid=1584418326&sprefix=3m+p100+cartrige%2Caps%2C202&sr=8-2). Download [3D model](https://github.com/jcl5m1/ventilator/blob/master/3dmodels/3M_filter_adapter.stl)
 
