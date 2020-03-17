@@ -74,7 +74,7 @@ Below is a close up of the extracted blower.  It simply an BLDC motor driving a 
 ![Extracted CPAP Blower](https://github.com/jcl5m1/ventilator/blob/master/images/IMG_20200315_230153.jpg?raw=true)
 
 Here is the schematic for the electronics. As you can see, it's very simple with only a few parts.
-![schematic](https://github.com/jcl5m1/ventilator/blob/master/images/schematic_20200317.0.jpg?raw=true)
+![schematic](https://github.com/jcl5m1/ventilator/blob/master/images/schematic_20200317.1.jpg?raw=true)
 
 
 ## Face mask
