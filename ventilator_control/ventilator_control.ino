@@ -1,31 +1,20 @@
 // originally written by Johnny Lee <jcl5m1@gmail.com>
 
-// http://arduiniana.org/libraries/pwmservo/
+#include <Servo.h>
 
-//   Board                     SERVO_PIN_A   SERVO_PIN_B   SERVO_PIN_C
-//   -----                     -----------   -----------   -----------
-//   Arduino Uno, Duemilanove       9            10          (none)
-//   Arduino Mega                  11            12            13
-//   Sanguino                      13            12          (none)
-//   Teensy 1.0                    17            18            15
-//   Teensy 2.0                    14            15             4
-//   Teensy++ 1.0 or 2.0           25            26            27
-//   Teensy LC & 3.x                 (all PWM pins are usable)
-
-#include <PWMServo.h>
-
-PWMServo myservo;  
+Servo myservo;  
 
 //some variables to tweek
-#define version "20201603.0"
+#define version "20201603.1"
 #define rate 16 // PEEP breathing cycles per minute
 #define enable_motor true // useful for debugging without noise
 
 #define max_speed 180
 #define min_speed 0
 #define start_speed 20
-#define ledPin 6
+#define ledPin 13
 #define buttonPin A5
+#define servo_pin 3
 #define serial_baud 9600
 
 int buttonState = 1;
@@ -53,12 +42,12 @@ void setup() {
   digitalWrite(ledPin, HIGH);
 
   if(enable_motor){
-    myservo.attach(SERVO_PIN_A, 1000, 2000); // some motors need min/max setting
+    myservo.attach(servo_pin,1000,2000); // some motors need min/max setting
     
     Serial.print("Initializing ESC...");
     
     myservo.write(max_speed);
-    delay(5000); // wait for esc to boot, and sample maximum
+    delay(3000); // wait for esc to boot, and sample maximum
     myservo.write(min_speed);
     digitalWrite(ledPin, LOW);
     delay(2000);  // wait for esc to sample minimum
@@ -122,23 +111,23 @@ void loop() {
   
   if (speed_state == 0) {
     target_speed_high = 60;
-    target_speed_low = 20;
+    target_speed_low = 10;
   }
   if (speed_state == 1) {
-    target_speed_high = 90;
-    target_speed_low = 20;
+    target_speed_high = 75;
+    target_speed_low = 10;
   }
   if (speed_state == 2) {
-    target_speed_high =  120;
-    target_speed_low =  20;
+    target_speed_high =  90;
+    target_speed_low =  10;
   }
   if (speed_state == 3) {
-    target_speed_high =  150;
-    target_speed_low =  20;
+    target_speed_high =  105;
+    target_speed_low =  10;
   }
   if (speed_state == 4) {
-    target_speed_high =  180;
-    target_speed_low =  20;
+    target_speed_high =  120;
+    target_speed_low =  10;
   }
   
   //CPAP mode, both speed are the same
