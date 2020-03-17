@@ -14,8 +14,9 @@ In the event that COVID-19 hospitalizations exhaust the availability of FDA appr
 4. Developing a better solution to the mouth guard.  Current solution would require a bunch of tape to create a sufficent forward pressure.
 5. If there is desire to make these, I don't have a supply chain setup. The few parts I have on hand may not be easily sourcable in any volume quickly.
 6. Solutions to prevent the system from becoming unsafe if power is lost.  It's not obvious to me on how to do this.  Ideas welcome.
+7. A 3D model for an [inline air filter](https://www.directhomemedical.com/cart/merchant.mvc?Screen=PROD&Product_Code=1-H1605-inline-bacterial-viral-cpap-filters&Store_Code=DHM&gclid=EAIaIQobChMIo-G35omi6AIVSrzACh29hwv3EAQYASABEgK9FPD_BwE) with link to common filter supply [such as this](https://www.amazon.com/3M-Particulate-Filter-Organic-Filters/dp/B079X5C3QP/ref=sr_1_2?keywords=p100+air+filter&qid=1584469511&sr=8-2)
 
-To provide comments/feedback, create a new issue on the project.  Thanks!
+To provide comments/feedback, [create a new issue](https://github.com/jcl5m1/ventilator/issues) on the project.  Thanks!
 
 
 # References about the supply and potential shortage of ventilators:
