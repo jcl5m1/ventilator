@@ -69,16 +69,16 @@ This is the full system, with mask, tubing, pump, 12v battery, and swtich for in
 
 ![Full System](https://github.com/jcl5m1/ventilator/blob/master/images/full%20system.jpg?raw=true)
 
-Below is a close up of the extracted blower.  It simply an BLDC motor driving a blower fan.  A small ESC and Arduino attached (technically a Teensy2.0++, but the code has now been changed to Arduino Nano).  It has a 3d printed tapered hose adpater on it to fit in the hose.  The [microcontroller software](https://github.com/jcl5m1/ventilator/tree/master/ventilator_control) can be programmed with the [Arduino IDE](https://www.arduino.cc/en/main/software). The software goes through a short initialization sequence to configure the ESC, and then starts at the lowest CPAP setting.  You can use the switch to cycle through pressure levels, and double click to cycle through operating modes.
+Below is a close up of the extracted blower.  It simply an BLDC motor driving a blower fan.  A small ESC and Arduino attached (technically a Teensy2.0++, but the code has now been changed to an Arduino Nano).  It has a 3d printed tapered hose adpater on it to fit in the hose.  The [microcontroller software](https://github.com/jcl5m1/ventilator/tree/master/ventilator_control) can be programmed with the [Arduino IDE](https://www.arduino.cc/en/main/software). The software goes through a short initialization sequence to configure the ESC, and then starts at the lowest CPAP setting.  You can use the switch to cycle through pressure levels, and double click to cycle through operating modes.
 
 ![Extracted CPAP Blower](https://github.com/jcl5m1/ventilator/blob/master/images/IMG_20200315_230153.jpg?raw=true)
 
-Here is the schematic for the electronics, as you can see.  It's very simple with only a few parts. 
-![schematic](https://github.com/jcl5m1/ventilator/blob/master/images/schematic.jpg?raw=true)
+Here is the schematic for the electronics. As you can see, it's very simple with only a few parts.
+![schematic](https://github.com/jcl5m1/ventilator/blob/master/images/schematic_20200317.0.jpg?raw=true)
 
 
 ## Face mask
-Since I have CPAP, I happen to have a [Resmed AitFit F20](https://www.amazon.com/Resmed-AirFit-Frame-System-Cushion/dp/B07C9MR5RS) mask that I can use.  This is quite comfortable and covers both the nose and mouth to make a good seal.  However if you can't get a mask,  below is a prototype mouthguard that fit in the category of not-so-great-but-usable-if-you-have-a-lot-of-tape.  [Here's the 3D model](https://github.com/jcl5m1/ventilator/blob/master/3dmodels/mouthgaurd_v20200316.2.stl).  This would require tape to create enough positive pressure.  A little bit of leakage is actually desirable to allow CO2 to escape near the mouth nose and flushes out the air over time, rather than being stuck in the tube.  <strong>WARNING: wearing this taped down without power may cause dangerous CO2 build up.</strong>
+Since I have CPAP, I happen to have a [Resmed AitFit F20](https://www.amazon.com/Resmed-AirFit-Frame-System-Cushion/dp/B07C9MR5RS) mask that I can use.  This is quite comfortable and covers both the nose and mouth to make a good seal.  However if you can't get a mask,  below is a prototype mouthguard that fit in the category of not-so-great-but-usable-if-you-have-a-lot-of-tape. Download the [3D model](https://github.com/jcl5m1/ventilator/blob/master/3dmodels/mouthgaurd_v20200316.2.stl).  I am using some elastic straps as head gear.  But to get an good air seal to get enough positive pressure would require some tape.  A little bit of leakage is actually desirable to allow CO2 to escape near the mouth nose and flushes out the air over time, rather than being stuck in the tube.  <strong>WARNING: wearing this sealed to the mouth with tape without power may cause dangerous CO2 build up.</strong>
 
 ![Mouth Guard](https://github.com/jcl5m1/ventilator/blob/master/images/mouthguard.jpg?raw=true)
 ![Mouth Guard model](https://raw.githubusercontent.com/jcl5m1/ventilator/67c2725fc48a3bc147430cb8c9974f961ff96b7c/images/mouth_guard_model.JPG)
@@ -96,7 +96,7 @@ Here are some images showing the dislacement of the liquid at differen speeds.  
 
 Here's a [video of the blower pushing a breathing cycle of 16 cycles/min oscilating between 12 and 22cm/H20](https://photos.app.goo.gl/b3yMPE5QpdeduxKS6).
 
-# Air Filtration 
+# Air Filtration - Optional
 
 An open air blower into someone's airway isn't great.  If possible, some filtration is preferred.  These parts were originally used for a DIY [Powered Air Purifying Respriator (PAPR)](https://en.wikipedia.org/wiki/Powered_air-purifying_respirator). However, adding a filter will definitely affect the output pressure.  It will depend on the blower you have if the motor can handle the additional load.  Given the headroom of the blower I tested, these CPAP blowers can probably handle the filter and still hit the target pressure.  However, I haven't done longterm thermal testing at high pressure and a strong filter. These adapter plates can be attached with liberal amounts of hot glue, and wrapping the unit in vinyl tape to get a reasonably airtight seal.  My blower's enclosure was not air-tight, so it is difficult to guarantee that 100% of the air is coming only through the filter.
 
