@@ -35,12 +35,14 @@ Some preliminary data (we can continue to update) on some of these areas:
 | Globe           |                               |                       |
 | U.S.            | 46,000 [1]                    |   200,000 or more [1] |
 | California      | 7,587 and "buying more" now [2]   |                       |
+| U.K.            | 5,000 [3]                      | > 30,000 [3]  |
 | ... add more... | ...         | ... |
 
 References
 
 - [1] Text from my friend who is a doctor at Stanford, let's replace with citable sources if possible. "Estimated 46,000 vent beds across US with anticipated need of 200,000, maybe more if more severe than we know"
 - [2] Gavin Newsom press conference, March 15, 2020 (add link)
+- [3] https://www.ft.com/content/7ebb238c-67c7-11ea-a3c9-1fe6fedcca75
 
 
 # References about CPAP/BiPAP/PEEP ventilator modes
