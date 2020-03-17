@@ -12,8 +12,8 @@ Servo myservo;
 #define max_speed 180
 #define min_speed 0
 #define start_speed 20
-#define ledPin 13
-#define buttonPin A5
+#define led_pin 13
+#define button_pin A5
 #define servo_pin 3
 #define serial_baud 9600
 
@@ -37,9 +37,9 @@ void setup() {
   Serial.print("Version:\t");
   Serial.println(version);
 
-  pinMode(ledPin, OUTPUT);
-  pinMode(buttonPin, INPUT_PULLUP);
-  digitalWrite(ledPin, HIGH);
+  pinMode(led_pin, OUTPUT);
+  pinMode(button_pin, INPUT_PULLUP);
+  digitalWrite(led_pin, HIGH);
 
   if(enable_motor){
     myservo.attach(servo_pin,1000,2000); // some motors need min/max setting
@@ -49,10 +49,10 @@ void setup() {
     myservo.write(max_speed);
     delay(3000); // wait for esc to boot, and sample maximum
     myservo.write(min_speed);
-    digitalWrite(ledPin, LOW);
+    digitalWrite(led_pin, LOW);
     delay(2000);  // wait for esc to sample minimum
 
-    digitalWrite(ledPin, HIGH);
+    digitalWrite(led_pin, HIGH);
     myservo.write(start_speed);
     Serial.println("Done");  
   } else {
@@ -63,7 +63,7 @@ void setup() {
 void loop() {
 
   buttonStatePrev = buttonState;
-  buttonState = digitalRead(buttonPin);
+  buttonState = digitalRead(button_pin);
 
   // button down event, accumulate number of clicks and time of first click
   if(buttonState == 0 and buttonStatePrev == 1){
@@ -88,9 +88,9 @@ void loop() {
         cycle_counter = 10000;
       }
       // blink LED
-      digitalWrite(ledPin, LOW);
+      digitalWrite(led_pin, LOW);
       delay(50);  
-      digitalWrite(ledPin, HIGH);
+      digitalWrite(led_pin, HIGH);
 
       // print state
       Serial.print(loop_count/100.0);
