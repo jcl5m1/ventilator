@@ -13,11 +13,12 @@ Here's a youtube video walking through the components as of 2020/03/17:
 # To Do's (aka. things that I could use help with):
 1. A pulmonologist that (while understanding this is not an FDA approved device) is willing to advise on how to make this more effective as a last resort.
 2. A supply chain person that can help us find good suppliers of parts. If there is desire to make these, I don't have a supply chain setup. The few parts I have on hand may not be easily sourcable in any volume quickly.
-3. Test with a [simple inflator pump](https://www.amazon.com/gp/product/B013UQ0T2Y/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1) and achieve the same pressure control.
-4. Develop Arduino compatible algorithms to align blower cycle the breathing cycle by [looking at backpressure load on the blower](https://github.com/jcl5m1/ventilator/wiki/Breathing-Back-Pressure-Data-Analysis). 
-5. Develop a better solution to the mouth guard.  Current solution would require a bunch of tape to create a sufficent forward pressure.
-6. Solutions to prevent the system from becoming unsafe if power is lost.  It's not obvious to me on how to do this.  Ideas welcome.
-7. A 3D model for an [inline air filter](https://www.directhomemedical.com/cart/merchant.mvc?Screen=PROD&Product_Code=1-H1605-inline-bacterial-viral-cpap-filters&Store_Code=DHM&gclid=EAIaIQobChMIo-G35omi6AIVSrzACh29hwv3EAQYASABEgK9FPD_BwE) with link to common filter supply [such as this](https://www.amazon.com/3M-Particulate-Filter-Organic-Filters/dp/B079X5C3QP/ref=sr_1_2?keywords=p100+air+filter&qid=1584469511&sr=8-2)
+3. Figure out how to reprogram an existing CPAP. If this operating mode is helpful, there's a large number of these device's already in the field which could be enabled.  I don't have good stats on the popularity of different makes/models.  There could be on the order of a [1M devices](https://www.cheapcpapsupplies.com/blog/sleep-apnea-statistics/) worldwide?
+4. Test with a [simple inflator pump](https://www.amazon.com/gp/product/B013UQ0T2Y/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1) and achieve the same pressure control.
+5. Develop Arduino compatible algorithms to align blower cycle the breathing cycle by [looking at backpressure load on the blower](https://github.com/jcl5m1/ventilator/wiki/Breathing-Back-Pressure-Data-Analysis). 
+6. Develop a better solution to the mouth guard.  Current solution would require a bunch of tape to create a sufficent forward pressure.
+7. Solutions to prevent the system from becoming unsafe if power is lost.  It's not obvious to me on how to do this.  Ideas welcome.
+8. A 3D model for an [inline air filter](https://www.directhomemedical.com/cart/merchant.mvc?Screen=PROD&Product_Code=1-H1605-inline-bacterial-viral-cpap-filters&Store_Code=DHM&gclid=EAIaIQobChMIo-G35omi6AIVSrzACh29hwv3EAQYASABEgK9FPD_BwE) with link to common filter supply [such as this](https://www.amazon.com/3M-Particulate-Filter-Organic-Filters/dp/B079X5C3QP/ref=sr_1_2?keywords=p100+air+filter&qid=1584469511&sr=8-2)
 
 To provide comments/feedback/offer help, [create a new issue](https://github.com/jcl5m1/ventilator/issues) on the project.  Thanks!
 
@@ -134,6 +135,8 @@ An open air blower into someone's airway isn't great.  If possible, some filtrat
 * This is an option for an [inline filter](https://www.directhomemedical.com/cart/merchant.mvc?Screen=PROD&Product_Code=1-H1605-inline-bacterial-viral-cpap-filters&Store_Code=DHM&gclid=EAIaIQobChMIo-G35omi6AIVSrzACh29hwv3EAQYASABEgK9FPD_BwE) [[discussion]](https://github.com/jcl5m1/ventilator/issues/4) that looks easy to install, and would be helpful for non-CPAP blowers. 
 
 # Updates:
+2020-03-18-9AM PST: added to do about reprogramming CPAPs
+
 2020-03-18-3AM PST: added youtube video
 
 2020-03-17-11PM PST: added current/breathing datasets, plots, and wiki for discussing analysis, and this update section
