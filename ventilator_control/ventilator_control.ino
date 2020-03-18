@@ -6,14 +6,15 @@ Servo myservo;
 
 //some variables to tweek
 #define version "20201603.1"
-#define rate 16 // PEEP breathing cycles per minute
+#define rate 16 // breathing cycles per minute
 #define enable_motor true // useful for debugging without noise
 
 #define max_speed 180
 #define min_speed 0
-#define start_speed 20
+#define PEEP_speed 40 //approx 5cm/H2O
 #define led_pin 13
 #define button_pin A5
+#define current_pin A0
 #define servo_pin 3
 #define serial_baud 9600
 
@@ -30,6 +31,8 @@ int target_speed_low = 0;
 int cycle_counter = 0;
 int cycle_phase = 0;
 int mode = 0;
+int current = 0;
+
 
 void setup() {
 
@@ -38,6 +41,8 @@ void setup() {
   Serial.println(version);
 
   pinMode(led_pin, OUTPUT);
+  pinMode(current_pin, INPUT);
+  analogReference(INTERNAL); // sets reference to 1.1v
   pinMode(button_pin, INPUT_PULLUP);
   digitalWrite(led_pin, HIGH);
 
@@ -53,7 +58,7 @@ void setup() {
     delay(2000);  // wait for esc to sample minimum
 
     digitalWrite(led_pin, HIGH);
-    myservo.write(start_speed);
+    myservo.write(PEEP_speed);
     Serial.println("Done");  
   } else {
     Serial.println("Motor disabled.  Bypassing initialization");      
@@ -108,26 +113,32 @@ void loop() {
       click_count = 0;
     }
   }
+
+  // approximate pressure mapping fro original blower. Other blowers will vary
+  // 40 ~= 5cm/H2O
+  // 60 ~= 10cm/H2O
+  // 90 ~= 18cm/H2O
+  // 120 ~= 32cm/H2O
   
   if (speed_state == 0) {
     target_speed_high = 60;
-    target_speed_low = 10;
+    target_speed_low = PEEP_speed;
   }
   if (speed_state == 1) {
-    target_speed_high = 75;
-    target_speed_low = 10;
+    target_speed_high = 70;
+    target_speed_low = PEEP_speed;
   }
   if (speed_state == 2) {
-    target_speed_high =  90;
-    target_speed_low =  10;
+    target_speed_high =  80;
+    target_speed_low =  PEEP_speed;
   }
   if (speed_state == 3) {
-    target_speed_high =  105;
-    target_speed_low =  10;
+    target_speed_high =  90;
+    target_speed_low =  PEEP_speed;
   }
   if (speed_state == 4) {
-    target_speed_high =  120;
-    target_speed_low =  10;
+    target_speed_high =  100;
+    target_speed_low =  PEEP_speed;
   }
   
   //CPAP mode, both speed are the same
@@ -152,6 +163,12 @@ void loop() {
     }
   }
 
+  // for debugging breathing back pressure sensing
+//  current = analogRead(current_pin);
+//  Serial.print(current);
+//  Serial.print(",");
+//  Serial.println(digitalRead(button_pin));
+  
   loop_count += 1;
-  delay(10);  // 100 cycles per second
+  delay(10);  // approximately 100 cycles per second
 }
