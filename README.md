@@ -78,7 +78,7 @@ Below is a close up of the extracted blower.  It simply an BLDC motor driving a 
 
 ![Extracted CPAP Blower](https://github.com/jcl5m1/ventilator/blob/master/images/IMG_20200315_230153.jpg?raw=true)
 
-Here is the schematic for the electronics. As you can see, it's very simple with only a few parts.
+Here is the schematic for the electronics. As you can see, it's very simple with only a few parts.  A slightly modifed version that is able to [sense the blower current is here](https://github.com/jcl5m1/ventilator/wiki/Breathing-Back-Pressure-Data-Analysis).
 ![schematic](https://github.com/jcl5m1/ventilator/blob/master/images/schematic_20200317.1.jpg?raw=true)
 
 
