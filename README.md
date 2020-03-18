@@ -11,7 +11,7 @@ In the event that COVID-19 hospitalizations exhaust the availability of FDA appr
 1. A pulmonologist that (while understanding this is not an FDA approved device) is willing to advise on how to make this more effective as a last resort.
 2. Supply chain person that can help us find good suppliers of parts.
 3. Testing with a [simple inflator pump](https://www.amazon.com/gp/product/B013UQ0T2Y/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1) and achieve the same pressure control.
-4. Can we detect the breath cycle by simply watching the motor current? Adding air pressure sensors may complicate the build meaningfully.  But, using a simple current sensing resistor is simple enough to try.
+4. Algorithms to detect the breathing cycle by [looking at backpressure load on the blower](https://github.com/jcl5m1/ventilator/wiki/Breathing-Back-Pressure-Data-Analysis). 
 5. Developing a better solution to the mouth guard.  Current solution would require a bunch of tape to create a sufficent forward pressure.
 6. If there is desire to make these, I don't have a supply chain setup. The few parts I have on hand may not be easily sourcable in any volume quickly.
 7. Solutions to prevent the system from becoming unsafe if power is lost.  It's not obvious to me on how to do this.  Ideas welcome.
