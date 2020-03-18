@@ -5,7 +5,7 @@ In the event that COVID-19 hospitalizations exhaust the availability of FDA appr
 
 <strong>WARNING/DISCLAIMER: Whenever possible, please seek professional medical care with proper equipment setup by trained individuals. Do not use random information you found on the internet. I am not a medical professional, just a random person on the internet.</strong>
 
-This rudimentary design could provide a target breathing rate, and a positive end-expiratory pressure (PEEP).  It can't guarantee a specific tidal volume, and doesn't regulate specific fractional oxygen (FiO2).  With an attached O2 tank, it could provide 100%.  Without a tank, it just pushes atmospheric air of 21% O2. Any other ratio would require manual guess work on the O2 supply flow.  It is lacking in many ways, but it is possible this limited functionality could help when better care is not possible.
+This rudimentary design could provide a target breathing rate (12-16/min), and achieve a positive end-expiratory pressure (PEEP) upto 45 cm/H20. Target for critical care pressure needs seem to vary between 20cm/H20 to 50cm/H20.  It can't guarantee a specific tidal volume, and doesn't regulate specific fractional oxygen (FiO2).  With an attached O2 tank, it could provide 100%.  Without a tank, it just pushes atmospheric air of 21% O2. Any other ratio would require manual guess work on the O2 supply flow.  It is lacking in many ways, but it is possible this limited functionality could help when better care is not possible.
 
 Here's a youtube video walking through the components as of 2020/03/17:
 [![Youtube video](https://img.youtube.com/vi/n57u1NvXBgw/0.jpg)](https://www.youtube.com/watch?v=n57u1NvXBgw)
@@ -14,14 +14,16 @@ There are also many other efforts in this direction.  [Here's a short list of th
 
 # To Do's (aka. things that I could use help with):
 1. A pulmonologist that (while understanding this is not an FDA approved device) is willing to advise on how to make this more effective as a last resort.
-2. A supply chain person that can help us find good suppliers of parts. If there is desire to make these, I don't have a supply chain setup. The few parts I have on hand may not be easily sourcable in any volume quickly.
-3. Figure out how to reprogram an existing CPAP. If this operating mode is helpful, there's a large number of these device's already in the field which could be enabled.  I don't have good stats on the popularity of different makes/models.  There could be on the order of a [1M devices](https://www.cheapcpapsupplies.com/blog/sleep-apnea-statistics/) worldwide?
-4. Design modifications to recapture exhaust to minimze addition viral spread. This only works in already "dirty" environments, where there is likely already airborne droplets containing virus - such as quarnateened spaces or other negative air pressure environments.
-5. Test with a [simple inflator pump](https://www.amazon.com/gp/product/B013UQ0T2Y/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1) and achieve the same pressure control.
-6. Develop Arduino compatible algorithms to align blower cycle to the breathing cycle by [looking at backpressure load on the blower](https://github.com/jcl5m1/ventilator/wiki/Breathing-Back-Pressure-Data-Analysis), or very simple air pressure sensor that can be inserted into the output of the pump.
-7. Develop a better solution to the mouth guard.  Current solution would require a bunch of tape to create a sufficent forward pressure.
-8. Solutions to prevent the system from becoming unsafe if power is lost.  It's not obvious to me on how to do this.  Ideas welcome.
-9. A 3D model for an [inline air filter](https://www.directhomemedical.com/cart/merchant.mvc?Screen=PROD&Product_Code=1-H1605-inline-bacterial-viral-cpap-filters&Store_Code=DHM&gclid=EAIaIQobChMIo-G35omi6AIVSrzACh29hwv3EAQYASABEgK9FPD_BwE) with link to common filter supply [such as this](https://www.amazon.com/3M-Particulate-Filter-Organic-Filters/dp/B079X5C3QP/ref=sr_1_2?keywords=p100+air+filter&qid=1584469511&sr=8-2)
+2. Test lung sourcing/research.  Example high end one from [Michigan Instruments](https://www.michiganinstruments.com/lung-simulators/adult-test-lung-simulators/).
+3. A supply chain person that can help us find good suppliers of parts. If there is desire to make these, I don't have a supply chain setup. The few parts I have on hand may not be easily sourcable in any volume quickly.
+4. Figure out how to reprogram an existing CPAP. If this operating mode is helpful, there's a large number of these device's already in the field which could be enabled.  I don't have good stats on the popularity of different makes/models.  There could be on the order of a [1M devices](https://www.cheapcpapsupplies.com/blog/sleep-apnea-statistics/) worldwide?
+5. Design modifications to recapture exhaust to minimze addition viral spread. This only works in already "dirty" environments, where there is likely already airborne droplets containing virus - such as quarnateened spaces or other negative air pressure environments.
+6. Develop a low-cost simple minute volume sensor/approximator.  Here is some information about the [downsides of being over/under on target volume.](https://www.acepnow.com/article/avoid-airway-catastrophes-extremes-minute-ventilation/).  Critical care seems to want up to 10-12L/Min.
+7. Test with a [simple inflator pump](https://www.amazon.com/gp/product/B013UQ0T2Y/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1) and achieve the same pressure control.
+8. Develop Arduino compatible algorithms to align blower cycle to the breathing cycle by [looking at backpressure load on the blower](https://github.com/jcl5m1/ventilator/wiki/Breathing-Back-Pressure-Data-Analysis), or very simple air pressure sensor that can be inserted into the output of the pump.
+9. Develop a better solution to the mouth guard.  Current solution would require a bunch of tape to create a sufficent forward pressure.
+10. Solutions to prevent the system from becoming unsafe if power is lost.  It's not obvious to me on how to do this.  Ideas welcome.
+11. A 3D model for an [inline air filter](https://www.directhomemedical.com/cart/merchant.mvc?Screen=PROD&Product_Code=1-H1605-inline-bacterial-viral-cpap-filters&Store_Code=DHM&gclid=EAIaIQobChMIo-G35omi6AIVSrzACh29hwv3EAQYASABEgK9FPD_BwE) with link to common filter supply [such as this](https://www.amazon.com/3M-Particulate-Filter-Organic-Filters/dp/B079X5C3QP/ref=sr_1_2?keywords=p100+air+filter&qid=1584469511&sr=8-2)
 
 To provide comments/feedback/offer help, [create a new issue](https://github.com/jcl5m1/ventilator/issues) on the project.  Thanks!
 
@@ -138,6 +140,8 @@ An open air blower into someone's airway isn't great.  If possible, some filtrat
 * This is an option for an [inline filter](https://www.directhomemedical.com/cart/merchant.mvc?Screen=PROD&Product_Code=1-H1605-inline-bacterial-viral-cpap-filters&Store_Code=DHM&gclid=EAIaIQobChMIo-G35omi6AIVSrzACh29hwv3EAQYASABEgK9FPD_BwE) [[discussion]](https://github.com/jcl5m1/ventilator/issues/4) that looks easy to install, and would be helpful for non-CPAP blowers. 
 
 # Updates:
+2020-03-18-2PM PST: added some information about pressure capabilities and todo around minute volume measurement
+
 2020-03-18-9AM PST: added to do about capturing exhaust droplets
 
 2020-03-18-9AM PST: added to do about reprogramming CPAPs
