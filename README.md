@@ -5,7 +5,7 @@ In the event that COVID-19 hospitalizations exhaust the availability of FDA appr
 
 <strong>WARNING/DISCLAIMER: Whenever possible, please seek professional medical care with proper equipment setup by trained individuals. Do not use random information you found on the internet. I am not a medical professional, just a random person on the internet.</strong>
 
-This rudimentary design could provide a target breathing rate, and a positive end-expiratory pressure (PEEP).  It can't guarantee a specic tidal volume, and can only provide atmospheric FiO2 (21%) or 100% if attached to an O2 tank.  It is also lacking in many ways, but it is possible this limited functionality could help when better care is not possible.
+This rudimentary design could provide a target breathing rate, and a positive end-expiratory pressure (PEEP).  It can't guarantee a specific tidal volume, and doesn't regulate specific FiO2.  With an attached O2 tank, it could provide 100% or without atmospheric (21%). Any other ratio manual guess work on the O2 supply flow.  It is lacking in many ways, but it is possible this limited functionality could help when better care is not possible.
 
 # To Do's (aka. things that I could use help with):
 1. A pulmonologist that (while understanding this is not an FDA approved device) is willing to advise on how to make this more effective as a last resort.
