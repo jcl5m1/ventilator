@@ -46,6 +46,16 @@ References
 - [3] https://www.ft.com/content/7ebb238c-67c7-11ea-a3c9-1fe6fedcca75
 
 
+# References from doctors specifically about ventilator technical requirements 
+
+## Specifically for COVID-19
+
+Tweets from Vamsi Aribindi, MD (March 13, 2020)  https://mobile.twitter.com/aribindi/status/1238629714069032961
+
+## Specifically for ARDS (which is associated with COVID-19)
+
+Journal article about treating ARDS (2017): https://www.nejm.org/doi/full/10.1056/NEJMra1608077
+
 # References about CPAP/BiPAP/PEEP ventilator modes
 [Lung Mechanics: PEEP,PEP,ACMV](https://www.youtube.com/watch?v=ScoSEeZJE08)
 
