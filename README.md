@@ -5,7 +5,7 @@ In the event that COVID-19 hospitalizations exhaust the availability of FDA appr
 
 <strong>WARNING/DISCLAIMER: Whenever possible, please seek professional medical care with proper equipment setup by trained individuals. Do not use random information you found on the internet. I am not a medical professional, just a random person on the internet.</strong>
 
-This rudimentary design could provide a target breathing rate, and a positive end-expiratory pressure (PEEP).  It can't guarantee a specific tidal volume, and doesn't regulate specific FiO2.  With an attached O2 tank, it could provide 100% or without atmospheric (21%). Any other ratio manual guess work on the O2 supply flow.  It is lacking in many ways, but it is possible this limited functionality could help when better care is not possible.
+This rudimentary design could provide a target breathing rate, and a positive end-expiratory pressure (PEEP).  It can't guarantee a specific tidal volume, and doesn't regulate specific fractional oxygen (FiO2).  With an attached O2 tank, it could provide 100%.  Without a tank, it just pushes atmospheric air of 21% O2. Any other ratio would require manual guess work on the O2 supply flow.  It is lacking in many ways, but it is possible this limited functionality could help when better care is not possible.
 
 Here's a youtube video walking through the components as of 2020/03/17:
 [![Youtube video](https://img.youtube.com/vi/n57u1NvXBgw/0.jpg)](https://www.youtube.com/watch?v=n57u1NvXBgw)
