@@ -133,6 +133,7 @@ An open air blower into someone's airway isn't great.  If possible, some filtrat
 
 * This is an option for an [inline filter](https://www.directhomemedical.com/cart/merchant.mvc?Screen=PROD&Product_Code=1-H1605-inline-bacterial-viral-cpap-filters&Store_Code=DHM&gclid=EAIaIQobChMIo-G35omi6AIVSrzACh29hwv3EAQYASABEgK9FPD_BwE) [[discussion]](https://github.com/jcl5m1/ventilator/issues/4) that looks easy to install, and would be helpful for non-CPAP blowers. 
 
-# Changes:
+# Updates:
+2020-03-18-3AM PST: added youtube video
 
-2020-03-17-11pm PST: added current/breathing datasets, plots, and wiki for discussing analysis, and this change section
+2020-03-17-11PM PST: added current/breathing datasets, plots, and wiki for discussing analysis, and this update section
