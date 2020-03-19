@@ -3,8 +3,12 @@
 # Low-Cost Open-Source Ventilator-ish Device
 In the event that COVID-19 hospitalizations exhaust the availability of FDA approved ventilators.  This project documents the process of converting a low-cost CPAP (Continuous Positive Airway Pressure) blower into a rudimentary ventilator that could help with breathing during an acute respiratory attack.  
 
-<strong>WARNING/DISCLAIMER: Whenever possible, please seek professional medical care with proper equipment setup by trained individuals. Do not use random information you found on the internet. I am not a medical professional, just a random person on the internet.</strong>
+### WARNING/DISCLAIMER: Whenever possible, please seek professional medical care with proper equipment setup by trained individuals. Do not use random information you found on the internet. I am not a medical professional, just a random person on the internet. There are significant risks associated with using a high pressure BiPAP as a DIY ventilator without medical supervision.  
 
+### Alternative: Build a PAPR
+As an alternative to building a DIY ventilator, thes exact components also function as a Powered Air Purifying Respirator (PAPR) if a filter is attached. Please see the bottom of the README for links for filter cartridge adapters.  PAPRs are effective pieces of Personal Protective Equipment (PPE) that could be helpful to caregivers. PAPRs will also be in extremely short supply and are much less risky and controversial than building a DIY Ventliator.
+
+### Hardware Capabilities
 This rudimentary design could provide a programmable target breathing rate (10-16/min), a target Positive End-Expiratory Pressure (PEEP), and the blower is physicially able to hit a peak airway pressure of upto 45cmH20. However, <strong>[going above 20cmH20 can be DANGEROUS](https://github.com/jcl5m1/ventilator/wiki/Notes-from-chatting-with-a-pulmonologist)</strong>.  It can't guarantee a specific tidal volume, and doesn't regulate specific fractional oxygen (FiO2).  With an attached O2 tank, it could provide 100%.  Without a tank, it just pushes atmospheric air (21% O2). Any other ratio would require manual guess work on the O2 supply flow.  It is lacking in many ways, but it is possible this limited functionality could help when better care is not possible.
 
 Here's a youtube video walking through the components as of 2020/03/17:
