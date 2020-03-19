@@ -13,7 +13,7 @@ Here's a youtube video walking through the components as of 2020/03/17:
 There are also many other efforts in this direction.  [Here's a short list of them](https://github.com/jcl5m1/ventilator/blob/master/resources.md) Thanks! [discussion](https://github.com/jcl5m1/ventilator/pull/20) 
 
 # To Do's (aka. things that I could use help with):
-1. A pulmonologist that (while understanding this is not an FDA approved device) is willing to advise on how to make this more effective as a last resort.
+1. I had a conversations with a pulmonologist.  [Here are my notes](https://github.com/jcl5m1/ventilator/wiki/Notes-from-a-Pulmonologist).  If you know someone with domain expertise, I would like confirmation that my take away notes are reasonable since this will drive priorities on engineering effort/conversations.
 2. Test lung sourcing/research.  Example high end one from [Michigan Instruments](https://www.michiganinstruments.com/lung-simulators/adult-test-lung-simulators/).
 3. A supply chain person that can help us find good suppliers of parts. If there is desire to make these, I don't have a supply chain setup. The few parts I have on hand may not be easily sourcable in any volume quickly.
 4. Figure out how to reprogram an existing CPAP. If this operating mode is helpful, there's a large number of these device's already in the field which could be enabled.  I don't have good stats on the popularity of different makes/models.  There could be on the order of a [1M devices](https://www.cheapcpapsupplies.com/blog/sleep-apnea-statistics/) worldwide?
@@ -140,6 +140,8 @@ An open air blower into someone's airway isn't great.  If possible, some filtrat
 * This is an option for an [inline filter](https://www.directhomemedical.com/cart/merchant.mvc?Screen=PROD&Product_Code=1-H1605-inline-bacterial-viral-cpap-filters&Store_Code=DHM&gclid=EAIaIQobChMIo-G35omi6AIVSrzACh29hwv3EAQYASABEgK9FPD_BwE) [[discussion]](https://github.com/jcl5m1/ventilator/issues/4) that looks easy to install, and would be helpful for non-CPAP blowers. 
 
 # Updates:
+2020-03-18-10PM PST: added link to notes from chatting with a pulmonologist
+
 2020-03-18-2PM PST: added some information about pressure capabilities and todo around minute volume measurement
 
 2020-03-18-9AM PST: added to do about capturing exhaust droplets
