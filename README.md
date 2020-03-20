@@ -2,8 +2,8 @@ Last updated 2020/03/20
 
 ![Full System](https://github.com/jcl5m1/ventilator/blob/master/images/full%20system.jpg?raw=true)
 
-# Low-Cost Open-Source Ventilator-ish Device (or a PAPR)
-In the event that COVID-19 hospitalizations exhaust the availability of FDA approved ventilators.  This project documents the process of converting a low-cost CPAP (Continuous Positive Airway Pressure) blower into either a rudimentary non-invasive ventilator that could help with breathing during respiratory distress.  It also provides information to on building a low-cost powered air purifying respirator (PAPR) that could protect caregivers.
+# Low-Cost Open-Source Ventilator-ish Device or PAPR
+In the event that COVID-19 hospitalizations exhaust the availability of FDA approved ventilators.  This project documents the process of converting a low-cost CPAP (Continuous Positive Airway Pressure) blower into either a rudimentary non-invasive ventilator that could help with breathing during respiratory distress.  It also provides information to on building a low-cost powered air purifying respirator (PAPR) which is a valuable piece of personal protective equipement (PPE) that could protect caregivers give the short supply.
 
 ### WARNING/DISCLAIMER: Whenever possible, please seek professional medical care with proper equipment setup by trained individuals. Do not use random information you found on the internet. I am not a medical professional, just a random person on the internet. There are significant risks associated with using a high pressure BiPAP as a DIY ventilator without medical supervision.  
 
