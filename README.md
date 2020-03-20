@@ -1,6 +1,6 @@
-![Full System](https://github.com/jcl5m1/ventilator/blob/master/images/full%20system.jpg?raw=true)
-
 Last updated 2020/03/20
+
+![Full System](https://github.com/jcl5m1/ventilator/blob/master/images/full%20system.jpg?raw=true)
 
 # Low-Cost Open-Source Ventilator-ish Device (or a PAPR)
 In the event that COVID-19 hospitalizations exhaust the availability of FDA approved ventilators.  This project documents the process of converting a low-cost CPAP (Continuous Positive Airway Pressure) blower into a rudimentary ventilator that could help with breathing during an acute respiratory attack.  
