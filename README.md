@@ -143,20 +143,4 @@ An open air blower into someone's airway isn't great.  If possible, some filtrat
 
 * This is an option for an [inline filter](https://www.directhomemedical.com/cart/merchant.mvc?Screen=PROD&Product_Code=1-H1605-inline-bacterial-viral-cpap-filters&Store_Code=DHM&gclid=EAIaIQobChMIo-G35omi6AIVSrzACh29hwv3EAQYASABEgK9FPD_BwE) [[discussion]](https://github.com/jcl5m1/ventilator/issues/4) that looks easy to install, and would be helpful for non-CPAP blowers. 
 
-# Updates:
-
-2020-03-19-6PM PST: added comment PAPR alternative wiki page.
-
-2020-03-19-8AM PST: added comment about building a PAPR alternative
-
-2020-03-18-10PM PST: added link to notes from chatting with a pulmonologist
-
-2020-03-18-2PM PST: added some information about pressure capabilities and todo around minute volume measurement
-
-2020-03-18-9AM PST: added to do about capturing exhaust droplets
-
-2020-03-18-9AM PST: added to do about reprogramming CPAPs
-
-2020-03-18-3AM PST: added youtube video
-
-2020-03-17-11PM PST: added current/breathing datasets, plots, and wiki for discussing analysis, and this update section
+# [Update Log](https://github.com/jcl5m1/ventilator/wiki)
