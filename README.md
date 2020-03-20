@@ -10,6 +10,12 @@ In the event that COVID-19 hospitalizations exhaust the availability of FDA appr
 ### Alternative: Build a low-cost PAPR!
 As an alternative to building a mediocre DIY ventilator, this device can also become a reasonable [low-cost Powered Air Purifying Respirator (PAPR)](https://github.com/jcl5m1/ventilator/wiki/Build-a-Low-Cost-PAPR) with filter adapter+mask.  PAPRs are effective pieces of Personal Protective Equipment (PPE) that could be helpful to caregivers. PAPRs will also be in extremely short supply and are much less risky and less controversial than building a DIY Ventliator.  You may be able to save many more lives by building a PAPR that protects a caregiver than a medicore ventilator for one patient.
 
+### What are the primary risks of a DIY ventilator?
+ * Being viewed as an alternative to available professional care or delaying seeking professional care.  This is should be view as educational or a last resort option only.
+ * Using non-invasive interfaces (such as masks and mouth pieces) can create aerosolized virus infecting many others in clean environments.  Infecing yourself or other healthy individuals multiplies the problem.  Restrict usage to places where aerosolized viruses are already abundant or in isolation. <strong>NOTE: Self-quarantine in an apartment or multi-unit residence is NOT proper isolation due to potential shared ventilation and sewage.</strong>
+* Giving too high a pressure (such as 20cmh20 and up) without observing lung compliance can cause rupture of infected lung tissue.  This design currently lacks several features that to provide feedback to a caregiver to monitor that risk.
+* See [more detailed discussion of these risk and potential engineering/administrative controls to address them](https://github.com/jcl5m1/ventilator/wiki/Notes-from-chatting-with-a-pulmonologist).
+
 ### Hardware Capabilities
 This rudimentary design could provide a programmable target breathing rate (10-16/min), a target Positive End-Expiratory Pressure (PEEP), and the blower is physicially able to hit a peak airway pressure of upto 45cmH20. However, <strong>[going above 20cmH20 can be DANGEROUS](https://github.com/jcl5m1/ventilator/wiki/Notes-from-chatting-with-a-pulmonologist)</strong>.  It can't guarantee a specific tidal volume, and doesn't regulate specific fractional oxygen (FiO2).  It is very doubtfull the blower is safe for 100% O2, so it just pushes atmospheric air (21% O2). Any other ratio would require O2 feed down stream and manual guess work supply flow.  It is lacking in many ways, but it is possible this limited functionality could help when better care is not available.
 
@@ -34,48 +40,9 @@ There are also many other efforts in this direction.  [Here's a short list of th
 To provide comments/feedback/offer help, [create a new issue](https://github.com/jcl5m1/ventilator/issues) on the project.  Thanks!
 
 
-# References about the supply and potential shortage of ventilators:
+# Useful References/Docs about the supply shortages, and guidance around unapproved devices:
 
-Here we will briefly summarize information on the supply and potential shortage.  Key numbers that will affect this:
-
-1. The current numbers for supply of ventilators (# of ventilators currently)
-2. The demand for ventilators, over time (# of ventilators needed over time)
-3. The ability to increase supply of ventilators (# of ventilators able to be manufactured over time)
-
-Additionally, the numbers above will vary based on each region's need globally.
-
-Some preliminary data (we can continue to update) on some of these areas:
-
-| Region          | # ventilators, current supply | # ventilators, needed  |
-| -------------   |:-----------------------------:| --------------------: |
-| Globe           |                               |                       |
-| U.S.            | 46,000 [1]                    |   200,000 or more [1] |
-| California      | 7,587 and "buying more" now [2]   |                       |
-| U.K.            | 5,000 [3]                      | > 30,000 [3]  |
-| ... add more... | ...         | ... |
-
-References
-
-- [1] Text from my friend who is a doctor at Stanford, let's replace with citable sources if possible. "Estimated 46,000 vent beds across US with anticipated need of 200,000, maybe more if more severe than we know"
-- [2] Gavin Newsom press conference, March 15, 2020 (add link)
-- [3] https://www.ft.com/content/7ebb238c-67c7-11ea-a3c9-1fe6fedcca75
-
-
-# References from doctors specifically about ventilator technical requirements 
-
-## Specifically for COVID-19
-
-Tweets from Vamsi Aribindi, MD (March 13, 2020)  https://mobile.twitter.com/aribindi/status/1238629714069032961
-
-## Specifically for ARDS (which is associated with COVID-19)
-
-Journal article about treating ARDS (2017): https://www.nejm.org/doi/full/10.1056/NEJMra1608077
-
-# References about CPAP/BiPAP/PEEP ventilator modes
-[Lung Mechanics: PEEP,PEP,ACMV](https://www.youtube.com/watch?v=ScoSEeZJE08)
-
-[Ventilator Modes Explained! PEEP, CPAP, Pressure vs. Volume](https://www.youtube.com/watch?v=iP_jN1qAPtI)
-
+There is a growing list of useful documents around guidance for use of unapproved equipment, and information around estimated shortages of both ventilators and personal protective equipment.  We have moved them to [References Wiki to enable better updates](https://github.com/jcl5m1/ventilator/wiki/Useful-References) make it easier to maintain.
 
 # Materials
 1. [Continuous Positive Airway Pressure (CPAP)](https://en.wikipedia.org/wiki/Continuous_positive_airway_pressure) devices are commonly used by individuals to treat [sleep apnea](https://en.wikipedia.org/wiki/Sleep_apnea). As a result, CPAP blower components are fairly abundant. Used ones are available on eBay and new ones on Alibaba. In many of these devices, the blower is a simple BLDC motor that can be driven with an Electronics Speed Controller (ESC) used by quadrotors and RC cars.  The one I used is pulled from a [Respironics REMStar](https://www.google.com/search?q=respironics+remstar&safe=off&rlz=1C1CHBF_enUS809US809&sxsrf=ALeKk00Uw98vXCAyCiiSglgt-2Ucnz5RCg:1584357572342&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj2mq_y757oAhXOvJ4KHV22D1EQ_AUoAnoECAwQBA).  In volume, these blower components can be under $20.  
