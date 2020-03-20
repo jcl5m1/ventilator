@@ -5,7 +5,7 @@ In the event that COVID-19 hospitalizations exhaust the availability of FDA appr
 
 ### WARNING/DISCLAIMER: Whenever possible, please seek professional medical care with proper equipment setup by trained individuals. Do not use random information you found on the internet. I am not a medical professional, just a random person on the internet. There are significant risks associated with using a high pressure BiPAP as a DIY ventilator without medical supervision.  
 
-### Alternative: Build low-cost PAPR!
+### Alternative: Build a low-cost PAPR!
 As an alternative to building a DIY ventilator, this exact device can also become a reasonable [low-cost Powered Air Purifying Respirator (PAPR)](https://github.com/jcl5m1/ventilator/wiki/Build-a-Low-Cost-PAPR) with filter adapter.  PAPRs are effective pieces of Personal Protective Equipment (PPE) that could be helpful to caregivers. PAPRs will also be in extremely short supply and are much less risky and less controversial than building a DIY Ventliator.  You may be able to save many more lives by building a PAPR that protects a caregiver than medicore ventilator for a patient.
 
 ### Hardware Capabilities
