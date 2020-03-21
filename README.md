@@ -11,8 +11,8 @@ Last updated 2020/03/20
 ### What are the primary risks of a DIY ventilator?
  * Being viewed as a viable alternative to available professional care or delaying seeking professional care.  This should be viewed as an educational resource or a last resort option only.  Community driven engineering efforts like this run the risk of making it "too easy to be harmful" which would be a bad outcome.
  * Using non-invasive interfaces (such as masks and mouth pieces) can create aerosolized virus infecting many others in clean environments.  Infecing yourself or other healthy individuals multiplies the problem.  Usage should be restricted to places where aerosolized viruses are already abundant (lots of unmasked symptomatic individuals), COVID wards, or in isolation. <strong>NOTE: Self-quarantine in an apartment or multi-unit residence is NOT proper isolation due to potential shared ventilation and sewage.</strong>
-* Giving too high a pressure (such as 20cmh2o and up) without observing lung compliance can cause rupture of infected lung tissue.  This design currently lacks several features that to provide enough feedback to a caregiver to monitor that risk.
-* See [more detailed discussion of these risk and potential engineering/administrative controls to address them](https://github.com/jcl5m1/ventilator/wiki/Notes-from-chatting-with-a-pulmonologist).
+* Giving too high a pressure (such as 20cmh2o and up) without observing lung compliance can cause rupture of infected lung tissue.  This design currently lacks several features that provide enough feedback to a caregiver to monitor that risk.
+* See [more detailed discussion of these risks and potential engineering/administrative controls to address them](https://github.com/jcl5m1/ventilator/wiki/Notes-from-chatting-with-a-pulmonologist).
 
 ### Too risky? Build a low-cost PAPR!
 One more time, a [low-cost Powered Air Purifying Respirator (PAPR)](https://github.com/jcl5m1/ventilator/wiki/Build-a-Low-Cost-PAPR) is highly vaulable for caregivers, and may have much more positive impact than bulding a mediocre ventilator.
@@ -20,10 +20,10 @@ One more time, a [low-cost Powered Air Purifying Respirator (PAPR)](https://gith
 ### Hardware Capabilities
  * This rudimentary design can have a programmable breathing rate (ex: 10-16/min)
  * It can have a programmed Positive End-Expiratory Pressure (PEEP)
- * The blower is physicially able to hit a peak airway pressure of upto 45cmh2o. However, <strong>[going above 20cmh2o can be DANGEROUS](https://github.com/jcl5m1/ventilator/wiki/Notes-from-chatting-with-a-pulmonologist)</strong>.  
-  * It can't yet hit a target tidal volume.  What level of accuracy in volume is sufficient?  100mL? 10mL?  
-  * It doesn't regulate fractional oxygen (FiO2).  But, a down stream connection to an O2 tank is possible to boost O2 concentration with manual flow adjustment.  I could use a pointer to a low cost O2 sensor.
-  * It is lacking in many other ways, but it is possible this limited functionality could helpful when better care is not available.  It is also a starting point for doing better.  Critical features can be added over time.
+ * The blower is physicially able to hit a peak airway pressure of up to 45cmh2o. However, <strong>[going above 20cmh2o can be DANGEROUS](https://github.com/jcl5m1/ventilator/wiki/Notes-from-chatting-with-a-pulmonologist)</strong>.  
+  * It cannot yet hit a target tidal volume.  What level of accuracy in volume would be sufficient?  100mL? 10mL?  
+  * It does not regulate fractional oxygen (FiO2).  But, a down stream connection to an O2 tank is possible to boost O2 concentration with manual flow adjustment.  I could use a pointer to a low cost O2 sensor.
+  * It is lacking in many other ways, but it is possible this limited functionality could be helpful when better care is not available.  It is also a starting point for doing better.  Critical features can be added over time.
 
 Here's a youtube video walking through the components as of 2020/03/17:
 [![Youtube video](https://img.youtube.com/vi/n57u1NvXBgw/0.jpg)](https://www.youtube.com/watch?v=n57u1NvXBgw)
