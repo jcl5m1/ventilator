@@ -20,7 +20,10 @@ NOTE: This is currently an independent project not affiliated with any commercia
 ### Too risky? Build a low-cost PAPR!
 One more time, a [low-cost Powered Air Purifying Respirator (PAPR)](https://github.com/jcl5m1/ventilator/wiki/Build-a-Low-Cost-PAPR) is highly vaulable for caregivers, and may have much more positive impact than bulding a mediocre ventilator.
 
-### Hardware Capabilities
+### Hardware Requirements:
+This is requirements doc from [Code Life Ventilator Challenge](Montreal General Hospital Foundation](https://www.agorize.com/en/challenges/code-life-challenge/pages/guidelines?lang=en)
+
+### Current Hardware Capabilities
  * This rudimentary design can have a programmable breathing rate (ex: 10-16/min)
  * It can have a programmed Positive End-Expiratory Pressure (PEEP)
  * The blower is physicially able to hit a peak airway pressure of up to 45cmh2o. However, <strong>[going above 20cmh2o can be DANGEROUS](https://github.com/jcl5m1/ventilator/wiki/Notes-from-chatting-with-a-pulmonologist)</strong>.  
@@ -30,9 +33,6 @@ One more time, a [low-cost Powered Air Purifying Respirator (PAPR)](https://gith
 
 Here's a youtube video walking through the components as of 2020/03/17:
 [![Youtube video](https://img.youtube.com/vi/n57u1NvXBgw/0.jpg)](https://www.youtube.com/watch?v=n57u1NvXBgw)
-
-### Hardware Requirements:
-This is requirements doc from [Code Life Ventilator Challenge](Montreal General Hospital Foundation](https://www.agorize.com/en/challenges/code-life-challenge/pages/guidelines?lang=en)
 
 There are also many other efforts in this direction.  [Here's a short list of them](https://github.com/jcl5m1/ventilator/blob/master/resources.md) Thanks! [discussion](https://github.com/jcl5m1/ventilator/pull/20) 
 
