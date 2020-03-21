@@ -31,6 +31,9 @@ One more time, a [low-cost Powered Air Purifying Respirator (PAPR)](https://gith
 Here's a youtube video walking through the components as of 2020/03/17:
 [![Youtube video](https://img.youtube.com/vi/n57u1NvXBgw/0.jpg)](https://www.youtube.com/watch?v=n57u1NvXBgw)
 
+### Hardware Requirements:
+This is requirements doc from [Code Life Ventilator Challenge](Montreal General Hospital Foundation](https://www.agorize.com/en/challenges/code-life-challenge/pages/guidelines?lang=en)
+
 There are also many other efforts in this direction.  [Here's a short list of them](https://github.com/jcl5m1/ventilator/blob/master/resources.md) Thanks! [discussion](https://github.com/jcl5m1/ventilator/pull/20) 
 
 # To Do's (aka. things I could use help with):
