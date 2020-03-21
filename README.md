@@ -15,7 +15,7 @@ Last updated 2020/03/20
 * See [more detailed discussion of these risk and potential engineering/administrative controls to address them](https://github.com/jcl5m1/ventilator/wiki/Notes-from-chatting-with-a-pulmonologist).
 
 ### Too risky? Build a low-cost PAPR!
-One more time, a [low-cost Powered Air Purifying Respirator (PAPR)](https://github.com/jcl5m1/ventilator/wiki/Build-a-Low-Cost-PAPR) is highly vaulable for caregivers, and may have much more positive impact than bulding a bad ventilator.
+One more time, a [low-cost Powered Air Purifying Respirator (PAPR)](https://github.com/jcl5m1/ventilator/wiki/Build-a-Low-Cost-PAPR) is highly vaulable for caregivers, and may have much more positive impact than bulding a mediocre ventilator.
 
 ### Hardware Capabilities
  * This rudimentary design can have a programmable breathing rate (ex: 10-16/min)
