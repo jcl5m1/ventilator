@@ -17,7 +17,12 @@ As an alternative to building a mediocre DIY ventilator, this device can also be
 * See [more detailed discussion of these risk and potential engineering/administrative controls to address them](https://github.com/jcl5m1/ventilator/wiki/Notes-from-chatting-with-a-pulmonologist).
 
 ### Hardware Capabilities
-This rudimentary design could provide a programmable target breathing rate (10-16/min), a target Positive End-Expiratory Pressure (PEEP), and the blower is physicially able to hit a peak airway pressure of upto 45cmh2o. However, <strong>[going above 20cmh2o can be DANGEROUS](https://github.com/jcl5m1/ventilator/wiki/Notes-from-chatting-with-a-pulmonologist)</strong>.  It can't guarantee a specific tidal volume, and doesn't regulate specific fractional oxygen (FiO2).  It is very doubtfull the blower is safe for 100% O2, so it just pushes atmospheric air (21% O2). Any other ratio would require O2 feed down stream and manual guess work on the supply flow.  It is lacking in many ways, but it is possible this limited functionality could help when better care is not available and it is a starting point for how to do better.
+ * This rudimentary design could provide a programmable target breathing rate (10-16/min)
+ * it can be progammed a target Positive End-Expiratory Pressure (PEEP)
+ * The blower is physicially able to hit a peak airway pressure of upto 45cmh2o. However, <strong>[going above 20cmh2o can be DANGEROUS](https://github.com/jcl5m1/ventilator/wiki/Notes-from-chatting-with-a-pulmonologist)</strong>.  
+  * It can't yet guarantee a specific tidal volume.  What level of accuracy in volume is sufficient?  100mL? 10mL?  
+  * It doesn't regulate fractional oxygen (FiO2).  But, a down stream connection to an O2 tank is possible to boost O2 concentration.  I could use a reference to a low cost O2 sensor.  
+  * It is lacking in many other ways, but it is possible this limited functionality could help when better care is not available and it is a starting point for how to do better.  Critical features can be added over time.
 
 Here's a youtube video walking through the components as of 2020/03/17:
 [![Youtube video](https://img.youtube.com/vi/n57u1NvXBgw/0.jpg)](https://www.youtube.com/watch?v=n57u1NvXBgw)
