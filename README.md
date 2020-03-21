@@ -81,7 +81,7 @@ Here is the schematic for the electronics. As you can see, it is very simple wit
 
 
 ## Face mask / Tube Adapter
-Since I have a CPAP, I happen to have a [Resmed AitFit F20](https://www.amazon.com/Resmed-AirFit-Frame-System-Cushion/dp/B07C9MR5RS) mask that I can use.  This is quite comfortable and covers both the nose and mouth to make a good seal.  However, if you can't get a mask,  below is a prototype mouthguard that fits in the category of not-so-great-but-usable-if-you-have-a-lot-of-tape.  I am using some [elastic straps](https://www.amazon.com/gp/product/B07WZRZDPF/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) as head gear.  However, in order to get a good air seal to get enough positive pressure, this would require some tape.  A little bit of leakage is actually desirable to allow CO2 to escape near the mouth nose and to flush out the air over time; this prevents CO2 from being stuck in the tube.  <strong>WARNING: wearing this sealed to the mouth with tape without power may cause dangerous CO2 build up.</strong>
+Since I have a CPAP, I happen to have a [Resmed AitFit F20](https://www.amazon.com/Resmed-AirFit-Frame-System-Cushion/dp/B07C9MR5RS) mask that I can use.  This is quite comfortable and covers both the nose and mouth to make a good seal.  However, if you can't get a mask,  below is a prototype mouthguard that fits in the category of not-so-great-but-usable-if-you-have-a-lot-of-tape.  I am using some [elastic straps](https://www.amazon.com/gp/product/B07WZRZDPF/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) as head gear.  However, in order to get a good air seal to get enough positive pressure, this would require some tape.  A little bit of leakage is actually desirable to allow CO2 to escape near the mouth and nose to flush out the air over time; this prevents CO2 from being stuck in the tube.  <strong>WARNING: wearing this sealed to the mouth with tape without power may cause dangerous CO2 build up.</strong>
 
 Download the [[3D model]](https://github.com/jcl5m1/ventilator/blob/master/3dmodels/mouthgaurd_v20200316.2.stl) [[Fusion 360 link]](https://a360.co/33rwb1R).
 
@@ -91,7 +91,7 @@ Download the [[3D model]](https://github.com/jcl5m1/ventilator/blob/master/3dmod
 
 # Pressure Testing
 
-This is a picture of my test rig to measure the output pressure.  It's a U-shaped tube with attached measuring tape to check displacement of water.  The actual liquid displacement is 2x the measured line since liquid is being push downwards on the other side of the U an equal amount, doubling the displacement. (I think this is the correct way to measure).  At full blast at 12v, it is achieving 45cmh2o. <strong>[WARNING: Going above 20cmh2o can be DANGEROUS](https://github.com/jcl5m1/ventilator/wiki/Notes-from-chatting-with-a-pulmonologist)</strong>.  So, these blowers are plently powerful.
+This is a picture of my test rig to measure the output pressure.  It is a U-shaped tube with an attached measuring tape to check displacement of water.  The actual liquid displacement is 2x the measured line since liquid is being push downwards on the other side of the U an equal amount, doubling the displacement. (I think this is the correct way to measure).  At full blast at 12v, it is achieving 45cmh2o. <strong>[WARNING: Going above 20cmh2o can be DANGEROUS](https://github.com/jcl5m1/ventilator/wiki/Notes-from-chatting-with-a-pulmonologist)</strong>.  So, these blowers are plently powerful.
 
 ![Pressure measurement fixture](https://github.com/jcl5m1/ventilator/blob/master/images/test_fixture.jpg?raw=true)
 
