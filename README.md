@@ -63,16 +63,16 @@ There is a growing list of useful documents around guidance for use of unapprove
 
 5. 12v DC power supply that can handle at least 5A.  The blower works pretty hard, and the breathing cycles can create voltage drops which will reset the Arduino if the supply is not strong enough.
 
-6. Tubing and face mask.  If you search for [CPAP face mask](https://www.google.com/search?q=cpap+mask), you'll find many options/suppliers.  The full face mask that covers both the mouth and nose and enabled pressure buildup in the lungs.  As an alternative, see below for draft 3D printable parts.
+6. Tubing and face mask.  If you search for [CPAP face mask](https://www.google.com/search?q=cpap+mask), you'll find many options/suppliers.  A full face mask that covers both the mouth and nose will enable pressure buildup in the lungs.  As an alternative, see below for draft 3D printable parts.
 
 7. Optional [inline 12v battery backup](https://www.amazon.com/gp/product/B07H8F5HYJ/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1).
 
 # Building
-This is the full system, with mask, tubing, pump, 12v battery, and swtich for input.  However, I would strongly recommend running with a DC power supply since the battery will only last about 3-4 hours.  <strong>Wearing the mask with a dead battery could cause dangerous CO2 build up.</strong>  This [particular battery](https://www.amazon.com/gp/product/B07H8F5HYJ/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) can charge and supply power at the same time, acting as an inline battery backup to wall power.
+This is the full system with mask, tubing, pump, 12v battery, and switch for input.  However, I would strongly recommend running this with a DC power supply since the battery will only last about 3-4 hours.  <strong>Wearing the mask with a dead battery could cause dangerous CO2 build up.</strong>  This [particular battery](https://www.amazon.com/gp/product/B07H8F5HYJ/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) can charge and supply power at the same time, acting as an inline battery backup to wall power.
 
 ![Full System](https://github.com/jcl5m1/ventilator/blob/master/images/full%20system.jpg?raw=true)
 
-Below is a close up of the extracted blower.  It simply an BLDC motor driving a blower fan.  A small ESC and Arduino attached (technically a Teensy2.0++, but the code has now been changed to an Arduino Nano).  It has a 3d printed tapered hose adpater on it to fit in the hose.  The [microcontroller software](https://github.com/jcl5m1/ventilator/tree/master/ventilator_control) can be programmed with the [Arduino IDE](https://www.arduino.cc/en/main/software). The software goes through a short initialization sequence to configure the ESC, and then starts at the lowest CPAP setting.  You can use the switch to cycle through pressure levels, and double click to cycle through operating modes.
+Below is a close up of the extracted blower.  It is simply a BLDC motor driving a blower fan.  A small ESC and Arduino attached (technically a Teensy2.0++, but the code has now been changed to an Arduino Nano).  It has a 3d printed tapered hose adpater on it to fit in the hose.  The [microcontroller software](https://github.com/jcl5m1/ventilator/tree/master/ventilator_control) can be programmed with the [Arduino IDE](https://www.arduino.cc/en/main/software). The software goes through a short initialization sequence to configure the ESC, and then starts at the lowest CPAP setting.  You can use the switch to cycle through pressure levels, and double click to cycle through operating modes.
 
 ![Extracted CPAP Blower](https://github.com/jcl5m1/ventilator/blob/master/images/IMG_20200315_230153.jpg?raw=true)
 
