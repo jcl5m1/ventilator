@@ -4,18 +4,18 @@ Last updated 2020/03/20
 
 # Low-Cost Open-Source Ventilator-ish Device or PAPR
 * In the event that COVID-19 hospitalizations exhaust the availability of FDA approved ventilators.  This project documents the process of converting a low-cost CPAP (Continuous Positive Airway Pressure) blower into either a rudimentary non-invasive ventilator that could help with breathing during respiratory distress.  
- * It also provides information, using the same parts, to create a low-cost powered air purifying respirator (PAPR) which is a valuable piece of personal protective equipement (PPE) that could protect caregivers.  Unless you are able to participate in the detailed engineering and medical discussions regarding mitigating the risks of high pressure ventilation, I would highly recommend focusing on the PAPR version of this build.
+ * The same project also can be used to create a reasonable [low-cost Powered Air Purifying Respirator (PAPR)](https://github.com/jcl5m1/ventilator/wiki/Build-a-Low-Cost-PAPR) with filter adapter and mask.  PAPRs are effective pieces of Personal Protective Equipment (PPE) that could be helpful to caregivers. PAPRs will also be in extremely short supply and are much less risky and less controversial than building a DIY ventliator.  You may be able to save many more lives by building a PAPR that protects a caregiver than a medicore ventilator for one patient.  Unless you are able to participate in the detailed engineering and medical discussions regarding mitigating the risks of high pressure ventilation, I would highly recommend focusing on the PAPR version of this build.
 
 ### WARNING/DISCLAIMER: Whenever possible, please seek professional medical care with proper equipment setup by trained individuals. Do not use random information you found on the internet. I am not a medical professional, just a random person putting information on the internet. There are significant risks associated with using a high pressure BiPAP as a DIY ventilator without medical supervision.  
-
-### Alternative: Build a low-cost PAPR!
-As an alternative to building a mediocre DIY ventilator, this device can also become a reasonable [low-cost Powered Air Purifying Respirator (PAPR)](https://github.com/jcl5m1/ventilator/wiki/Build-a-Low-Cost-PAPR) with filter adapter and mask.  PAPRs are effective pieces of Personal Protective Equipment (PPE) that could be helpful to caregivers. PAPRs will also be in extremely short supply and are much less risky and less controversial than building a DIY ventliator.  You may be able to save many more lives by building a PAPR that protects a caregiver than a medicore ventilator for one patient. 
 
 ### What are the primary risks of a DIY ventilator?
  * Being viewed as a viable alternative to available professional care or delaying seeking professional care.  This is should be view as educational resource or a last resort option only.  Community driven engineering efforts like this run the risk of making it "too easy to be harmful" which would be a bad outcome.
  * Using non-invasive interfaces (such as masks and mouth pieces) can create aerosolized virus infecting many others in clean environments.  Infecing yourself or other healthy individuals multiplies the problem.  Restrict usage to places where aerosolized viruses are already abundant (lots of unmasked symptomatic individuals) or in isolation. <strong>NOTE: Self-quarantine in an apartment or multi-unit residence is NOT proper isolation due to potential shared ventilation and sewage.</strong>
 * Giving too high a pressure (such as 20cmh2o and up) without observing lung compliance can cause rupture of infected lung tissue.  This design currently lacks several features that to provide feedback to a caregiver to monitor that risk.
 * See [more detailed discussion of these risk and potential engineering/administrative controls to address them](https://github.com/jcl5m1/ventilator/wiki/Notes-from-chatting-with-a-pulmonologist).
+
+### Too risky? Build a low-cost PAPR!
+One more time a [low-cost Powered Air Purifying Respirators (PAPR)](https://github.com/jcl5m1/ventilator/wiki/Build-a-Low-Cost-PAPR) are great, and may have much more positive impact than bulding a bad ventilator. 
 
 ### Hardware Capabilities
  * This rudimentary design can have a programmable breathing rate (10-16/min)
