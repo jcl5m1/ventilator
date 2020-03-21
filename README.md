@@ -4,7 +4,7 @@ Last updated 2020/03/20
 
 # Low-Cost Open-Source Ventilator-ish Device or PAPR
 
-NOTE: This in currently an independent project not affiliated with any commercial institution.
+NOTE: This is currently an independent project not affiliated with any commercial institution.
 
 * In the event that COVID-19 hospitalizations exhaust the availability of FDA approved ventilators.  This project documents the process of converting a low-cost CPAP (Continuous Positive Airway Pressure) blower into a rudimentary non-invasive pressure support ventilator that could help with breathing during respiratory distress.  
  * This same project can also be used to create a reasonable [low-cost Powered Air Purifying Respirator (PAPR)](https://github.com/jcl5m1/ventilator/wiki/Build-a-Low-Cost-PAPR) with filter adapter and mask.  PAPRs are effective pieces of Personal Protective Equipment (PPE) that could be helpful to caregivers. PAPRs will also be in extremely short supply and are much less risky and controversial than a DIY ventilator.  You may be able to save many more lives by building a PAPR that protects a caregiver than a mediocre ventilator for one patient.  Unless you are able to participate in the detailed engineering and medical discussions regarding mitigating the risks of high pressure ventilation, I would highly recommend focusing on the PAPR version of this build.
