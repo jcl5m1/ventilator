@@ -23,7 +23,7 @@ One more time, a [low-cost Powered Air Purifying Respirator (PAPR)](https://gith
  * The blower is physicially able to hit a peak airway pressure of up to 45cmh2o. However, <strong>[going above 20cmh2o can be DANGEROUS](https://github.com/jcl5m1/ventilator/wiki/Notes-from-chatting-with-a-pulmonologist)</strong>.  
   * It cannot yet hit a target tidal volume.  What level of accuracy in volume would be sufficient?  100mL? 10mL?  
   * It does not regulate fractional oxygen (FiO2).  But, a down stream connection to an O2 tank is possible to boost O2 concentration with manual flow adjustment.  I could use a pointer to a low cost O2 sensor.
-  * It is lacking in many other ways, but it is possible this limited functionality could be helpful when better care is not available.  It is also a starting point for doing better.  Critical features can be added over time.
+  * It is lacking in many other ways, but it is possible that this limited functionality could be helpful when better care is not available.  It is also a starting point for making progress.  Critical features can be added over time.
 
 Here's a youtube video walking through the components as of 2020/03/17:
 [![Youtube video](https://img.youtube.com/vi/n57u1NvXBgw/0.jpg)](https://www.youtube.com/watch?v=n57u1NvXBgw)
@@ -34,21 +34,21 @@ There are also many other efforts in this direction.  [Here's a short list of th
 1. I had a long conversation with a pulmonologist to discuss the critical features of a proper ventilator and trade offs. [Here are my notes](https://github.com/jcl5m1/ventilator/wiki/Notes-from-chatting-with-a-pulmonologist).  If you know someone with domain expertise, I would like confirmation that my take away notes are reasonable since this will drive priorities on engineering effort/conversations.
 2. Develop a simple low-cost sensor configuration that can [provide a similar approximation of lung compliance provided by a ventilator loop display](https://github.com/jcl5m1/ventilator/wiki/Notes-from-chatting-with-a-pulmonologist#at-a-high-level-the-goal-is-to-get-enough-air-into-the-lungs-to-keep-the-patient-alive-without-causing-unnecessary-stress-on-infected-lung-tissue)
 3. Test lung sourcing/research.  Example high end one from [Michigan Instruments](https://www.michiganinstruments.com/lung-simulators/adult-test-lung-simulators/).
-4. A supply chain person that can help us find good suppliers of parts. If there is desire to make these, I don't have a supply chain setup. The few parts I have on hand may not be easily sourcable in any volume quickly.
-5. Figure out how to reprogram an existing BiPAP. If this operating mode is helpful, there's a large number of these device's already in the field which could be enabled.  I don't have good stats on the popularity of different makes/models.  There could be on the order of a [1M devices](https://www.cheapcpapsupplies.com/blog/sleep-apnea-statistics/) worldwide?
+4. A supply chain person that can help us find good suppliers of parts, if there is desire to make these. I don't have a supply chain setup. The few parts I have on hand may not be easily sourcable in any volume quickly.
+5. Figure out how to reprogram an existing BiPAP. If this operating mode is helpful, there's a large number of these devices already in the field which could be enabled.  I don't have good stats on the popularity of different makes/models.  There could be on the order of a [1M devices](https://www.cheapcpapsupplies.com/blog/sleep-apnea-statistics/) worldwide?
 6. Design modifications to recapture exhaust to minimze addition viral spread. This only works in already "dirty" environments, where there is likely already airborne droplets containing virus - such as quarnateened spaces or other negative air pressure environments.
 7. Develop Arduino compatible algorithms to align blower cycle to the breathing cycle by [looking at backpressure load on the blower](https://github.com/jcl5m1/ventilator/wiki/Breathing-Back-Pressure-Data-Analysis), or very simple air pressure sensor that can be inserted into the output of the pump.  For ease of developing algorithms see [Colab notebook with data visualization.](https://colab.research.google.com/drive/1iFMmMMrg_3OeifzJikT75fy4ev84W235)
 8. Solutions to prevent the system from becoming unsafe if power is lost.  It's not obvious to me on how to do this.  Ideas are welcome.
-9. A 3D model for an [inline air filter](https://www.directhomemedical.com/cart/merchant.mvc?Screen=PROD&Product_Code=1-H1605-inline-bacterial-viral-cpap-filters&Store_Code=DHM&gclid=EAIaIQobChMIo-G35omi6AIVSrzACh29hwv3EAQYASABEgK9FPD_BwE) with link to common filter supply [such as this](https://www.amazon.com/3M-Particulate-Filter-Organic-Filters/dp/B079X5C3QP/ref=sr_1_2?keywords=p100+air+filter&qid=1584469511&sr=8-2)
+9. A 3D model for an [inline air filter](https://www.directhomemedical.com/cart/merchant.mvc?Screen=PROD&Product_Code=1-H1605-inline-bacterial-viral-cpap-filters&Store_Code=DHM&gclid=EAIaIQobChMIo-G35omi6AIVSrzACh29hwv3EAQYASABEgK9FPD_BwE) with link to common filter supply [such as this](https://www.amazon.com/3M-Particulate-Filter-Organic-Filters/dp/B079X5C3QP/ref=sr_1_2?keywords=p100+air+filter&qid=1584469511&sr=8-2).
 10. Test with a [simple inflator pump](https://www.amazon.com/gp/product/B013UQ0T2Y/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1) and achieve the same pressure control.
-11. Develop a low-cost simple minute volume sensor/approximator.  Here is some information about the [downsides of being over/under on target volume.](https://www.acepnow.com/article/avoid-airway-catastrophes-extremes-minute-ventilation/).  Critical care seems to want up to 10-12L/Min.
+11. Develop a low-cost simple minute volume sensor/approximator.  Here is some information about the [downsides of being over/under on target volume](https://www.acepnow.com/article/avoid-airway-catastrophes-extremes-minute-ventilation/).  Critical care seems to want up to 10-12L/Min.
 
 To provide comments/feedback/offer help, [create a new issue](https://github.com/jcl5m1/ventilator/issues) on the project.  Thanks!
 
 
 # Useful References/Docs about the supply shortages, and guidance around unapproved devices:
 
-There is a growing list of useful documents around guidance for use of unapproved equipment, and information around estimated shortages of both ventilators and personal protective equipment.  We have moved them to [References Wiki to enable better updates](https://github.com/jcl5m1/ventilator/wiki/Useful-References) make it easier to maintain.
+There is a growing list of useful documents around guidance for use of unapproved equipment, and information around estimated shortages of both ventilators and personal protective equipment.  We have moved them to [References Wiki to enable better updates](https://github.com/jcl5m1/ventilator/wiki/Useful-References) to make it easier to maintain.
 
 # Materials
 1. [Continuous Positive Airway Pressure (CPAP)](https://en.wikipedia.org/wiki/Continuous_positive_airway_pressure) devices are commonly used by individuals to treat [sleep apnea](https://en.wikipedia.org/wiki/Sleep_apnea). As a result, CPAP blower components are fairly abundant. Used ones are available on eBay and new ones on Alibaba. In many of these devices, the blower is a simple BLDC motor that can be driven with an Electronics Speed Controller (ESC) used by quadrotors and RC cars.  The one I used is pulled from a [Respironics REMStar](https://www.google.com/search?q=respironics+remstar&safe=off&rlz=1C1CHBF_enUS809US809&sxsrf=ALeKk00Uw98vXCAyCiiSglgt-2Ucnz5RCg:1584357572342&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj2mq_y757oAhXOvJ4KHV22D1EQ_AUoAnoECAwQBA).  In volume, these blower components can be under $20.  
@@ -59,7 +59,7 @@ There is a growing list of useful documents around guidance for use of unapprove
 
 3. Brushless DC Motor [Electronic Speed Controller](https://www.amazon.com/Hobbypower-Brushless-Controller-Multicopter-Helicopter/dp/B00XKX5TBE/ref=sr_1_17?keywords=12v+ESC&qid=1584357758&sr=8-17) capable of at least 10A. 
 
-4. Button or swtich for input control.  The code cycles through 5 levels of pressure, and double click to swtich between CPAP and BiPAP/Fixed PEEP mode.
+4. Button or switch for input control.  The code cycles through 5 levels of pressure. Double click to switch between CPAP and BiPAP/Fixed PEEP mode.
 
 5. 12v DC power supply that can handle at least 5A.  The blower works pretty had, and the breathing cycles can create voltage drops which will reset the Arduino if the supply if not strong enough.
 
