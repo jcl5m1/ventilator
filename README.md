@@ -21,9 +21,9 @@ NOTE: This is currently an independent project not affiliated with any commercia
 One more time, a [low-cost Powered Air Purifying Respirator (PAPR)](https://github.com/jcl5m1/ventilator/wiki/Build-a-Low-Cost-PAPR) is highly vaulable for caregivers, and may have much more positive impact than bulding a mediocre ventilator.
 
 ### Hardware Requirements and Medical/Government Request for proposals:
-Requirements doc from [Code Life Ventilator Challenge - Montreal General Hospital Foundation](https://www.agorize.com/en/challenges/code-life-challenge/pages/guidelines?lang=en)
+ * Requirements doc from [Code Life Ventilator Challenge - Montreal General Hospital Foundation](https://www.agorize.com/en/challenges/code-life-challenge/pages/guidelines?lang=en) (Canada)
 
-Requirements from [Gov.UK  - Rapidly Manufactured Ventilator System](https://www.gov.uk/government/publications/coronavirus-covid-19-ventilator-supply-specification/rapidly-manufactured-ventilator-system-specification?fbclid=IwAR2IgOyENgHJTsLouIiikpuiwgwupdB8d8Aun2he8nzMPWGfhBVhaG_sMqo)
+ * Requirements from [Gov.UK  - Rapidly Manufactured Ventilator System](https://www.gov.uk/government/publications/coronavirus-covid-19-ventilator-supply-specification/rapidly-manufactured-ventilator-system-specification?fbclid=IwAR2IgOyENgHJTsLouIiikpuiwgwupdB8d8Aun2he8nzMPWGfhBVhaG_sMqo) (UK)
 
 ### Current Hardware Capabilities
   * This rudimentary design can have a programmable breathing rate (ex: 10-16/min)
