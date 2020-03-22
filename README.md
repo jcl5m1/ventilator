@@ -6,7 +6,7 @@ Last updated 2020/03/20
 
 NOTE: This is currently an independent project not affiliated with any commercial institution.
 
-* In the event that COVID-19 hospitalizations exhaust the availability of FDA approved ventilators.  This project documents the process of converting a low-cost CPAP (Continuous Positive Airway Pressure) blower into a rudimentary non-invasive pressure support ventilator that could help with breathing during respiratory distress.  
+* In the event that COVID-19 hospitalizations exhaust the availability of FDA approved ventilators.  This project documents the process of converting a low-cost CPAP (Continuous Positive Airway Pressure) blower into a rudimentary non-invasive pressure support ventilator that could help with breathing during respiratory distress.  It's an evolving project, but un it's current form, it most aligned with the definition of a non-invasive pressure support BiPAP ventilator.
  * This same project can also be used to create a reasonable [low-cost Powered Air Purifying Respirator (PAPR)](https://github.com/jcl5m1/ventilator/wiki/Build-a-Low-Cost-PAPR) with filter adapter and mask.  PAPRs are effective pieces of Personal Protective Equipment (PPE) that could be helpful to caregivers. PAPRs will also be in extremely short supply and are much less risky and controversial than a DIY ventilator.  You may be able to save many more lives by building a PAPR that protects a caregiver than a mediocre ventilator for one patient.  Unless you are able to participate in the detailed engineering and medical discussions regarding mitigating the risks of high pressure ventilation, I would highly recommend focusing on the PAPR version of this build.
 
 ### WARNING/DISCLAIMER: Whenever possible, please seek professional medical care with proper equipment setup by trained individuals. Do not use random information you found on the internet. I am not a medical professional, just a random person putting information on the internet. There are significant risks associated with using a high pressure BiPAP as a DIY ventilator without medical supervision.  
@@ -20,13 +20,14 @@ NOTE: This is currently an independent project not affiliated with any commercia
 ### Too risky? Build a low-cost PAPR!
 One more time, a [low-cost Powered Air Purifying Respirator (PAPR)](https://github.com/jcl5m1/ventilator/wiki/Build-a-Low-Cost-PAPR) is highly vaulable for caregivers, and may have much more positive impact than bulding a mediocre ventilator.
 
-### Hardware Requirements:
-This is the requirements doc from [Code Life Ventilator Challenge - Montreal General Hospital Foundation](https://www.agorize.com/en/challenges/code-life-challenge/pages/guidelines?lang=en)
+### Hardware Requirements / RFPs:
+Requirements doc from [Code Life Ventilator Challenge - Montreal General Hospital Foundation](https://www.agorize.com/en/challenges/code-life-challenge/pages/guidelines?lang=en)
+Requirements from [Gov.UK](https://www.gov.uk/government/publications/coronavirus-covid-19-ventilator-supply-specification/rapidly-manufactured-ventilator-system-specification?fbclid=IwAR2IgOyENgHJTsLouIiikpuiwgwupdB8d8Aun2he8nzMPWGfhBVhaG_sMqo)
 
 ### Current Hardware Capabilities
- * This rudimentary design can have a programmable breathing rate (ex: 10-16/min)
- * It can have a programmed Positive End-Expiratory Pressure (PEEP)
- * The blower is physicially able to hit a peak airway pressure of up to 45cmh2o. However, <strong>[going above 20cmh2o can be DANGEROUS](https://github.com/jcl5m1/ventilator/wiki/Notes-from-chatting-with-a-pulmonologist)</strong>.  
+  * This rudimentary design can have a programmable breathing rate (ex: 10-16/min)
+  * It can have a programmed Positive End-Expiratory Pressure (PEEP)
+  * The blower is physicially able to hit a peak airway pressure of up to 45cmh2o. However, <strong>[going above 20cmh2o can be DANGEROUS](https://github.com/jcl5m1/ventilator/wiki/Notes-from-chatting-with-a-pulmonologist)</strong>.  
   * It cannot yet hit a target tidal volume.  What level of accuracy in volume would be sufficient?  100mL? 10mL?  
   * It does not regulate fractional oxygen (FiO2).  But, a down stream connection to an O2 tank is possible to boost O2 concentration with manual flow adjustment.  I could use a pointer to a low cost O2 sensor.
   * It is lacking in many other ways, but it is possible that this limited functionality could be helpful when better care is not available.  It is also a starting point for making progress.  Critical features can be added over time.
