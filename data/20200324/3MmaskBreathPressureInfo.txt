@@ -1,0 +1,6 @@
+3MmaskBreathPressure.log contains pressure readings from an MS5611 pressure sensor located on a Pixhawk flight controller board.
+It was captured using QGroundControl v3.52 on 3/24/2020.  The mechanical setup has a tube adapter cemented over the board-mounted 
+MS5611.  An approximately 3.5 meter long 6mm OD oxygen line is connected to the tube adapter.  The other end of the tube is fed inside of
+a 3M 6200 half face respirator at the peak of the nose.  The respirator is fitted with two improvised filter cartridges made by gluing 
+filter medium from a standard 2-layer vacuum cleaner bag over a 3-D printed ABS filter body.  In this setup there is more airflow resistance 
+during inhalation when the filters are in the flow (when pressure drops) than during exhalation (when pressure rises).  
