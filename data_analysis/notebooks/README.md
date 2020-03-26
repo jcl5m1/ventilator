@@ -1,9 +1,9 @@
 # Jupiter Notebooks
 
-## Config and install requirements
-See [README](/data_analaysis/dependencies/setting_notebook.md)
+## Configuration and installation o requirements
+See [README](/data_analysis/dependencies/setting_notebook.md)
 
-## Activate virtual env
+## Activate virtual environment
 ```
 source ~/ventilator/bin/activate
 ```
