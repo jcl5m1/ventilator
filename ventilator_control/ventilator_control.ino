@@ -5,7 +5,7 @@
 Servo myservo;  
 
 //some variables to tweek
-#define version "20201603.1"
+#define version "20200316.2"
 #define rate 16 // breathing cycles per minute
 #define enable_motor true // useful for debugging without noise
 
