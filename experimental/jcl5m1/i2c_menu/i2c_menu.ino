@@ -212,12 +212,11 @@ void bar_chart(int c, int r, int seg, int v, int max_v){
 void display_runtime(int c, int r){
   // running time
   lcd.setCursor ( c, r );
-  long t = millis()/1000;
-  int s = t%60;
-  int m = (s/60)%60;
-  int h = (m/60);
-  int d = (h/24);
-  sprintf(msg, "%02d:%02d:%02d:%02d", d, h, m, s);
+  unsigned long seconds = millis()/1000;
+  unsigned long minutes = seconds/60;
+  unsigned long hours = minutes/60;
+  unsigned long days = hours/24;
+  sprintf(msg, "%02lud%02luh%02lum%02lu", days, hours%24, minutes%60, seconds%60);
   lcd.print(msg);  
 }
 
