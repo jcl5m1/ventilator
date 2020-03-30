@@ -5,6 +5,10 @@ float volume_estimate = 0;
 void setup()
 {
   Wire.begin();
+  //disable internal pullups to support 3.3v I2C
+  pinMode(A4, INPUT);
+  pinMode(A5, INPUT); 
+  
   Serial.begin(9600);
   Serial.println("\nSensirion3200_i2c reader");
   init_flow_sensor();

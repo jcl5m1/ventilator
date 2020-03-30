@@ -3,6 +3,11 @@
 void setup()
 {
   Wire.begin();
+
+  //disable internal pullups to support 3.3v I2C
+  pinMode(A4, INPUT);
+  pinMode(A5, INPUT); 
+  
   Serial.begin(9600);
   Serial.println("\nI2C Scanner");
 }

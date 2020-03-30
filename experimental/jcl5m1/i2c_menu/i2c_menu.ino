@@ -35,6 +35,10 @@ const byte bar3Char[] = {0x1C,0x1C,0x1C,0x1F,0x1C,0x1C,0x1C,0x00};
 const byte bar4Char[] = {0x1E,0x1E,0x1E,0x1F,0x1E,0x1E,0x1E,0x00};
 const byte bar5Char[] = {0x1F,0x1F,0x1F,0x1F,0x1F,0x1F,0x1F,0x00};
 
+unsigned long start_ts = 0;
+unsigned long display_time = 0;
+
+
 const byte editArrow[] = {
   0x1F,
   0x1B,
@@ -61,7 +65,11 @@ int debug = 0;
 
 void setup()
 {
+  
   lcd.init();  //initialize the lcd
+  //disable internal pullups to support 3.3v I2C
+  pinMode(A4, INPUT);
+  pinMode(A5, INPUT); 
   lcd.backlight();  //open the backlight 
 
   pinMode(BUTTON_PIN, INPUT_PULLUP);
@@ -213,6 +221,7 @@ void display_runtime(int c, int r){
 }
 
 void update_display(){
+  start_ts = millis();
   for(int i = 0; i < DISPLAY_ROWS; i++){
     int idx = display_page_idx*DISPLAY_ROWS + i;
     lcd.setCursor ( 0, i );
@@ -254,16 +263,20 @@ void update_display(){
       lcd.print(msg);
     } else if(idx == 6) { // debug *************************************************************************
       int v = values[idx];
-      sprintf(msg, "%s:%03d", value_names[idx], v);
+      sprintf(msg, "%s:%ul", value_names[idx], display_time);
       lcd.print(msg);
-      bar_chart(8,i,12, v, 255);
+//      bar_chart(8,i,12, v, 255);
     } else {
       sprintf(msg, "%s:%2d%c %2d", value_names[idx], values[idx], ' ', measured_values[idx]);
       lcd.print(msg);
       bar_chart(16,i,BAR_CHART_LENGTH, values[idx], values_max[idx]);
     }
 
-  }    
+  }
+
+  unsigned long delta = millis() - start_ts;
+  if(delta > display_time)
+    display_time = delta;
 }
 
 void loop() 
