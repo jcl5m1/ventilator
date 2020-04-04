@@ -22,41 +22,11 @@
 # Reference sheet on original parts
 
 ## CPAP filter
-
-### Description
-
-A filter used by ventilators for filtering out dust and moisture particles. Original part consists of two pieces melted together, and filtering membrane inside. The membrane is just a piece of cloth and fiber, it does not have any complex structures HEPA-filters and such.
-
-Accurate part dimensions are captured in **_Inline_filter_VB-65mm.STEP_** file
-
-Currently development is happening in https://github.com/jcl5m1/ventilator/tree/cpap-ventilator branch
-
-### Requirements
-* Part should be completely sealable (possibly with the help of superglue of medical silicone)
-* Part should contain special filter inside
-
-**Reference photos:**
-
-![CPAP filter front view](images/CPAP-filter-front.jpg)
-![Membrane](images/CPAP-filter-membrane.jpg)
-![CPAP filter cut open 1](images/CPAP-filter-open.jpg)
-![CPAP filter cut open 2](images/CPAP-filter-open-2.jpg)
-![Membrane dimensions](images/CPAP-membrane.jpg)
-
-### Solution #1
-The 3D-printed part that consists of 2 pieces. Parts have very small tollerances and are connected using mechanical lock to make it re-usable. Requires additional sealant for complete air-tightness.
-![3D printed CPAP filter](images/CPAP-3D-printed-filter.jpg)
-![3D printed CPAP filter connected to tubes](images/CPAP-3D-printed-filter-connected.jpg)
-![Membrane location inside 3D printed filter](images/CPAP-3D-printed-filter-opened.jpg)
+Please check Wiki page for more details: https://github.com/jcl5m1/ventilator/wiki/Bacterial-Viral-Filter-for-CPAP-Machines
 
 
-**Recommended print settings**
-- Infill rate: 70% or higher
-- Lower part to be printed from inlet upwards. Recommended to use 3mm brim for stability
-- Because of steep anges use higher print temperature to improve filament adhersion 
 
-### Solution #2
-*_Design in progress_*
-Monolitic part that has filter inserted during print process. Does not require extra sealant. Not reusable. Requires insertion of custom G-code after particular layer in order to manually insert filter in the model
+
+
 
 
