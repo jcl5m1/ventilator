@@ -32,7 +32,8 @@ Accurate part dimensions are captured in **_Inline_filter_VB-65mm.STEP_** file
 Currently development is happening in https://github.com/jcl5m1/ventilator/tree/cpap-ventilator branch
 
 ### Requirements
-The 3D-printed part should consist of 2 pieces. For assembly they could either be glued together (superglue) or use some mechanical lock to make it re-usable. In both scenarios it should be possible to completely seal assembly 
+* Part should be completely sealable (possibly with the help of superglue of medical silicone)
+* Part should contain special filter inside
 
 **Reference photos:**
 
@@ -42,7 +43,20 @@ The 3D-printed part should consist of 2 pieces. For assembly they could either b
 ![CPAP filter cut open 2](images/CPAP-filter-open-2.jpg)
 ![Membrane dimensions](images/CPAP-membrane.jpg)
 
-### Recommended print settings
-> To be provided
+### Solution #1
+The 3D-printed part that consists of 2 pieces. Parts have very small tollerances and are connected using mechanical lock to make it re-usable. Requires additional sealant for complete air-tightness.
+![3D printed CPAP filter](images/CPAP-3D-printed-filter.jpg)
+![3D printed CPAP filter connected to tubes](images/CPAP-3D-printed-filter-connected.jpg)
+![Membrane location inside 3D printed filter](images/CPAP-3D-printed-filter-opened.jpg)
+
+
+**Recommended print settings**
+- Infill rate: 70% or higher
+- Lower part to be printed from inlet upwards. Recommended to use 3mm brim for stability
+- Because of steep anges use higher print temperature to improve filament adhersion 
+
+### Solution #2
+*_Design in progress_*
+Monolitic part that has filter inserted during print process. Does not require extra sealant. Not reusable. Requires insertion of custom G-code after particular layer in order to manually insert filter in the model
 
 
