@@ -31,33 +31,43 @@ class Plot2D:
     def convertY(self, y):
         return int(self.img.shape[0]*(1.0 - (y-self.yMin)/float(self.yMax-self.yMin)))
 
-    def mark_line(self, v, name=None, color=(1.0, 1.0, 1.0), size=1.0, axis=0, show_value=False, name2=None):
+    def mark_line(self, v, name=None, color=(1.0, 1.0, 1.0), size=1.0, axis=0, show_value=False, name2=None, rightJustify=False):
         line_spacing = int(20*size)
-        text_y_pos = 0
-        if axis == 0:
+        font = cv2.FONT_HERSHEY_PLAIN
+        thickness = 1
+        if axis == 0:  # horizontal line
+            text_x_pos = self.convertX(0) + 5
             y = self.convertY(v)
             cv2.line(self.img, (0, y), (self.img.shape[1], y), color)
             text_y_pos = y + line_spacing
             if name:
-                cv2.putText(self.img, name, (self.convertX(0)+5, text_y_pos), cv2.FONT_HERSHEY_PLAIN, size, color)
+                cv2.putText(self.img, name, (text_x_pos, text_y_pos), font, size, color)
             if name2:
                 text_y_pos += line_spacing
-                cv2.putText(self.img, name2, (self.convertX(0)+5, text_y_pos), cv2.FONT_HERSHEY_PLAIN, size, color)
+                cv2.putText(self.img, name2, (text_x_pos, text_y_pos), font, size, color)
             if show_value:
                 text_y_pos += line_spacing
-                cv2.putText(self.img, "{:.1f}".format(v), (self.convertX(0) + 5, text_y_pos), cv2.FONT_HERSHEY_PLAIN, size, color)
-        else:
+                cv2.putText(self.img, "{:.1f}".format(v), (text_x_pos, text_y_pos), font, size, color)
+        else:  # vertical line
             x = self.convertX(v)
+            text_x_pos = x + 5
+            justify_offset = 0
             cv2.line(self.img,  (x, 0), (x, self.img.shape[0]), color)
             text_y_pos = self.convertY(0) + line_spacing
             if name:
-                cv2.putText(self.img, name, (x+5, text_y_pos), cv2.FONT_HERSHEY_PLAIN, size, color)
+                if rightJustify:
+                    justify_offset = -10-cv2.getTextSize(name, font, size, thickness)[0][0]
+                cv2.putText(self.img, name, (text_x_pos + justify_offset, text_y_pos), font, size, color)
             if name2:
+                if rightJustify:
+                    justify_offset = -10-cv2.getTextSize(name, font, size, thickness)[0][0]
                 text_y_pos += line_spacing
-                cv2.putText(self.img, name2, (x+5, text_y_pos), cv2.FONT_HERSHEY_PLAIN, size, color)
+                cv2.putText(self.img, name2, (text_x_pos + justify_offset, text_y_pos), font, size, color)
             if show_value:
+                if rightJustify:
+                    justify_offset = -10-cv2.getTextSize(name, font, size, thickness)[0][0]
                 text_y_pos += line_spacing
-                cv2.putText(self.img, "{:.1f}".format(v), (x+5, text_y_pos), cv2.FONT_HERSHEY_PLAIN, size, color)
+                cv2.putText(self.img, "{:.1f}".format(v), (text_x_pos + justify_offset, text_y_pos), font, size, color)
 
     def point(self, x, y, color=(1.0, 1.0, 1.0), size=3, lineThickness=1):
         x = self.convertX(x)
@@ -123,7 +133,7 @@ class LinePlot:
 
     def on_mouse(self, event, x, y, flags, param):
         cursor_time = -1
-
+        font = cv2.FONT_HERSHEY_PLAIN
         for ts in param.timestamps:
             if ts[0] < x:
                 continue
@@ -133,7 +143,7 @@ class LinePlot:
         value_y = (1 - y/self.img.shape[0])*(self.yMax-self.yMin) + self.yMin
         cv2.rectangle(param.img, (0, 0), (600, 20), (0, 0, 0), -1)
         cv2.putText(param.img, "{0:.3f}, {1:.3f}".format(cursor_time, value_y),
-                    (5, 15), cv2.FONT_HERSHEY_PLAIN, 0.9, (128, 128, 128))
+                    (5, 15), font, 0.9, (128, 128, 128))
         if event == cv2.EVENT_LBUTTONDOWN:
             self.mouse_down_time = cursor_time
         if event == cv2.EVENT_LBUTTONUP:
@@ -145,7 +155,7 @@ class LinePlot:
             if dt > 0:
                 freq = 1.0/dt
             cv2.putText(param.img, "delta: {0:.3f}s freq:{1:.3f}Hz".format(dt, freq),
-                        (100, 15), cv2.FONT_HERSHEY_PLAIN, 0.9, (128, 128, 128))
+                        (100, 15), font, 0.9, (128, 128, 128))
 
     def clear(self):
         self.x = -1
