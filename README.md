@@ -1,4 +1,4 @@
-Last updated 2020/04/18
+Last updated 2020/04/19
 
 ![Full System](https://github.com/jcl5m1/ventilator/blob/master/images/full%20system.jpg?raw=true)
 
@@ -19,6 +19,11 @@ NOTE: This is currently an independent project not affiliated with any commercia
 
 ### Too risky? Build a low-cost PAPR!
 One more time, a [low-cost Powered Air Purifying Respirator (PAPR)](https://github.com/jcl5m1/ventilator/wiki/Build-a-Low-Cost-PAPR) is highly valuable for caregivers, and may have much more positive impact than bulding a mediocre ventilator.
+
+### Want to build something without electronics?  Consider building PPE
+* There are many efforts making [DIY face shields](https://www.google.com/search?q=3d+printed+face+shields)
+* There are many efforts making [face masks](https://www.google.com/search?q=make%20a%20face%20mask) from home materials.  We've also posted some of [our results of testing filter performance of different materials.](https://github.com/jcl5m1/ventilator/wiki/Material-Filter-Testing)
+
 
 ### Hardware Requirements and Medical/Government Request for proposals:
  * Requirements doc from [Code Life Ventilator Challenge - Montreal General Hospital Foundation](https://www.agorize.com/en/challenges/code-life-challenge/pages/guidelines?lang=en) (Canada)
